@@ -7,6 +7,7 @@
   - [Repo](#repo)
     - [Repository](#repository)
   - [Apps](#apps)
+    - [Installation](#installation)
     - [Python](#python)
 
 ## Update OS
@@ -49,12 +50,13 @@ https://web.archive.org/web/20200927093559/http://repository.maemo.org/extras/po
 
 The servers [repository.maemo.org](repository.maemo.org) are down.
 But a backup is available for download at:
-https://web.archive.org/web/20250201032157/http://repository.maemo.org/
+[web.archive.org](https://web.archive.org/web/20250201032157/http://repository.maemo.org/)
 
 Mirror:
-[maemo.plan9.de](https://maemo.plan9.de/)
-https://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/
-https://talk.maemo.org/showthread.php?t=101524&page=3
+- [talk.maemo.org](https://talk.maemo.org/showthread.php?t=101524&page=3)
+- [maemo.plan9.de](https://maemo.plan9.de/)
+- [maemo.plan9.de/apt-mirror](https://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/)
+
 
 > [!note]
 > Check [install](./maemoOS_files/repository/) files for repository configuration.
@@ -88,19 +90,24 @@ Source:
 - https://www.idnes.cz/mobil/aplikace/deset-a-dve-vylepseni-nokie-n900-aplikace-ktere-musite-mit.A100209_192018_programy_lhc
 
 ## Apps
-https://talk.maemo.org/showthread.php?t=100636
-http://mynokiablog.com/2010/05/13/apps-apps-and-some-more-apps-for-your-nokia-n900-maemo-5/
+- [talk.maemo.org](https://talk.maemo.org/showthread.php?t=100636)
+- [apps-for-your-nokia-n900](http://mynokiablog.com/2010/05/13/apps-apps-and-some-more-apps-for-your-nokia-n900-maemo-5/)
 
+List of recommended applications for the Nokia N900:
 - Faster Application Manager - fapman
 - HealthCheck
 - VNC Viewer
 - Personal IP address
 
-https://wiki.maemo.org/Installing_applications
-
+### Installation
 ```bash
 dpkg -i <name>.deb
 ```
+
+- [Installing_applications](https://wiki.maemo.org/Installing_applications)
+
+> [!note]
+> Check the [maemoOS_files](./maemoOS_files/deb/) directory for `.deb` files.
 
 ### Python
 - https://wiki.maemo.org/PyMaemo/QuickStartGuide

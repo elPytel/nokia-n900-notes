@@ -1,0 +1,8 @@
+[install]
+catalogues = extras
+package = healthcheck
+
+[extras]
+name = Maemo Extras
+uri = http://repository.maemo.org/extras/
+components = free non-free

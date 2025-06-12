@@ -1,0 +1,27 @@
+[install]
+catalogues = nokia-systemupdates-muarf; nokia-apps-muarf; extras-devel; tools
+package = backupmenu
+
+[nokia-systemupdates-muarf]
+name = Nokia System Software Updates (mirror, read WARNING!)
+uri = http://maemo.muarf.org/apt-mirror/mirror/downloads.maemo.nokia.com/fremantle/ssu/mr0 
+dist = ./
+components = 
+
+[nokia-apps-muarf]
+name = Nokia Applications (mirror read WARNING!)
+uri = http://maemo.muarf.org/apt-mirror/mirror/downloads.maemo.nokia.com/fremantle/ssu/apps/ 
+dist = ./
+components = 
+
+[extras-devel]
+name = Maemo Extras-DEVEL catalogue (read WARNING!)
+uri = http://repository.maemo.org/extras-devel
+dist = fremantle
+components = free non-free
+
+[tools]
+name = developer tools (**DOOM!**)
+uri = http://repository.maemo.org
+dist = fremantle/tools
+components = free non-free
