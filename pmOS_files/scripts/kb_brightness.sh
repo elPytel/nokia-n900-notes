@@ -46,11 +46,6 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-if ! [ -d "$TARGET" ]; then
-    echo "Target directory $TARGET does not exist."
-    exit 1
-fi
-
 new_val=$(update_backlight $1)
 
 for i in $(seq 1 6); do
