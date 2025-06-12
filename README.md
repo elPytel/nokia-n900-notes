@@ -3,20 +3,26 @@
 Various links, notes and files for Nokia N900.
 
 - [nokia-n900-notes](#nokia-n900-notes)
-  - [pmOS](#pmos)
+  - [Nokia N900 Notes](#nokia-n900-notes-1)
     - [My notes](#my-notes)
     - [Other notes](#other-notes)
-  - [Maemo Leste](#maemo-leste)
-  - [Maemo Fremantle](#maemo-fremantle)
-  - [NITDroid](#nitdroid)
-  - [Other OS](#other-os)
+  - [OS](#os)
+    - [Postmarket OS (mOS)](#postmarket-os-mos)
+    - [Maemo Leste](#maemo-leste)
+    - [Maemo Fremantle](#maemo-fremantle)
+    - [NITDroid](#nitdroid)
+    - [Debian](#debian)
+    - [Other OS](#other-os)
+  - [FIX Nokia](#fix-nokia)
+  - [HW](#hw)
+    - [RTC backup baterry](#rtc-backup-baterry)
 
-## pmOS
+## Nokia N900 Notes
 
 ### My notes
 
-1. [Successful overclocking of the SoC on pmOS](./pmos_overclocking.md)
-2. [My notes in pmOS wiki](https://wiki.postmarketos.org/wiki/User:TheSame/nokia-n900_notes)
+1. [SSH to Maemo](./doc/Nokia%20N900%20-%20SSH.md)
+2. [Successful overclocking of the SoC on pmOS](./pmos_overclocking.md)
 
 ### Other notes
 
@@ -26,11 +32,21 @@ Various links, notes and files for Nokia N900.
 4. [Ollieparanoid's Dogfooding:N900](https://wiki.postmarketos.org/wiki/User:Ollieparanoid/Dogfooding:N900)
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
 
-## Maemo Leste
+## OS
+
+### Postmarket OS (mOS)
+
+[Postmarket OS](./Postmarket%20OS.md)
+
+
+### Maemo Leste
+[Leste](./Leste.md)
 
 1. [Maemo Leste for Nokia N900](https://leste.maemo.org/Nokia_N900)
 
-## Maemo Fremantle
+### Maemo Fremantle
+
+[Maemo 5](./Maemo%205.md)
 
 1. [The Perfect Setup](https://wiki.maemo.org/N900_The_Perfect_Setup)
 2. [MAEMOs.ru](http://maemos.ru/faq/)
@@ -42,7 +58,7 @@ Various links, notes and files for Nokia N900.
 8. [Overclocking](https://wiki.maemo.org/Overclocking)
 9. [Archive.org files](https://archive.org/details/nokia_N900)
 
-## NITDroid
+### NITDroid
 
 1. [Nokia N900 NITDroid multiboot with Android 2.3 Gingerbread (depricated, just for general information)](https://github.com/mattiacantalu/Nokia_N900_NITDroid)
 2. [NITDroid on dedicated disk part](https://talk.maemo.org/showthread.php?t=101345)
@@ -50,8 +66,31 @@ Various links, notes and files for Nokia N900.
 4. [Archive.org files](https://archive.org/details/NokiaN900NITdroid)
 5. [Triple-boot - Maemo 5 + Maemo 7 Leste + Android 2.3.4](https://talk.maemo.org/showthread.php?t=101338)
 
-## Other OS
+### Debian
+1. [Debian on Nokia N900](https://wiki.debian.org/DebianOnN900)
+2. [Debian900](https://github.com/dderby/debian900)
+3. [Easy Debian](https://wiki.maemo.org/Easy_Debian)
+4. [Qole's Debian](https://qole.org/files/debian900/)
+
+
+### Other OS
+
+1. [Kali Linux Rolling Edition (depricated)](https://talk.maemo.org/showthread.php?t=96573)
+2. [Arch Linux ARM (depricated)](https://talk.maemo.org/showthread.php?t=81892)
+
+## FIX Nokia
 
 1. [RescueOS](https://github.com/quitesimpleorg/N900_RescueOS) [(description)](https://quitesimple.org/page/N900rescueOS)
-2. [Kali Linux Rolling Edition (depricated)](https://talk.maemo.org/showthread.php?t=96573)
-3. [Arch Linux ARM (depricated)](https://talk.maemo.org/showthread.php?t=81892)
+- https://talk.maemo.org/showthread.php?t=100920
+- https://github.com/mattiacantalu/Nokia-N900-RX-51-20.2010
+- http://maemo.org/downloads/product/Maemo5/backupmenu/
+- https://www.lemmymorgan.com/how-to-manually-flash-nokia-n900-with-usb-cable/
+- https://kicherer.org/joomla/index.php/en/blog/32-recovering-a-non-booting-nokia-n900-with-maemo-from-a-sd-card
+
+- https://wiki.maemo.org/Updating_the_firmware
+- https://wiki.maemo.org/N900_The_Perfect_Setup
+
+## HW
+### RTC backup baterry
+- https://talk.maemo.org/showthread.php?t=92199
+- https://talk.maemo.org/showthread.php?t=90864

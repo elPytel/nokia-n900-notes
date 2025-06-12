@@ -1,0 +1,8 @@
+[catalogues]
+catalogues = extras-plan9-2017
+
+[extras-plan9-2017]
+name = Extras (mirror plan9 2017)
+uri = http://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/extras/
+dist = fremantle
+components = free non-free

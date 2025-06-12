@@ -1,0 +1,8 @@
+[catalogues]
+catalogues = community-testing-plan9-2017
+
+[community-testing-plan9-2017]
+name = Community SSU (testing) (mirror plan9 2017)
+uri = http://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/community-testing/
+dist = fremantle
+components = free non-free

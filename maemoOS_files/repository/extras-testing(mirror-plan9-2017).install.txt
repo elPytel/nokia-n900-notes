@@ -1,0 +1,8 @@
+[catalogues]
+catalogues = extras-testing-plan9-2017
+
+[extras-testing-plan9-2017]
+name = Extras-Testing (mirror plan9 2017)
+uri = http://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/extras-testing/
+dist = fremantle
+components = free non-free
