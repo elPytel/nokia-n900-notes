@@ -1,9 +1,8 @@
-# nokia-n900-notes
-
+# Nokia N900 Resources
 Various links, notes and files for Nokia N900.
 
-- [nokia-n900-notes](#nokia-n900-notes)
-  - [Nokia N900 Notes](#nokia-n900-notes-1)
+- [Nokia N900 Resources](#nokia-n900-resources)
+  - [Nokia N900 Notes](#nokia-n900-notes)
     - [My notes](#my-notes)
     - [Other notes](#other-notes)
   - [OS](#os)
@@ -22,7 +21,8 @@ Various links, notes and files for Nokia N900.
 ### My notes
 
 1. [SSH to Maemo](./doc/Nokia%20N900%20-%20SSH.md)
-2. [Successful overclocking of the SoC on pmOS](./pmos_overclocking.md)
+2. [wordgrinder installation on postmarketOS](./doc/pmos_wordgrinder.md)
+3. [Successful overclocking of the SoC on pmOS](./doc/pmos_overclocking.md)
 
 ### Other notes
 
@@ -31,6 +31,7 @@ Various links, notes and files for Nokia N900.
 3. [NikkSaan's n900-battery-monitor script](https://gist.github.com/NikkSaan/800c17d87dddfaa9edf5274130717d73)
 4. [Ollieparanoid's Dogfooding:N900](https://wiki.postmarketos.org/wiki/User:Ollieparanoid/Dogfooding:N900)
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
+6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
 
 ## OS
 

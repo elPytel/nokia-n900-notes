@@ -1,6 +1,9 @@
 # Postmarket OS
 
 - [Postmarket OS](#postmarket-os)
+  - [Files for postmarketOS](#files-for-postmarketos)
+    - [Configs](#configs)
+    - [Scripts](#scripts)
   - [OS imgs](#os-imgs)
     - [installation](#installation)
   - [login](#login)
@@ -8,7 +11,7 @@
     - [installation](#installation-1)
     - [Bash](#bash)
     - [ssh](#ssh)
-  - [Connect from computer](#connect-from-computer)
+      - [Connect from computer](#connect-from-computer)
   - [i3wm](#i3wm)
     - [Shortcuts](#shortcuts)
         - [default mode](#default-mode)
@@ -16,6 +19,23 @@
         - [workspace mode](#workspace-mode)
         - [Other](#other)
           - [Display brightness](#display-brightness)
+
+## Files for postmarketOS
+
+Useful files for postmarketOS which are oriented to Nokia N900.
+
+### Configs
+
+- `i3` - configuration files for [`i3`](https://wiki.archlinux.org/title/i3) (modified version from [saku-bruh](https://github.com/saku-bruh/i3-n900));
+- `i3blocks` - configuration files for [`i3blocks`](https://man.archlinux.org/man/i3blocks.1.en);
+- `spotifyd` - configuration file for [`spotifyd`](https://github.com/Spotifyd/spotifyd) (optimized for Nokia N900).
+
+### Scripts
+
+- [`kb_brightness.sh`](./scripts/kb_brightness.sh) - script to control the brightness of the keypad backlight LEDs;
+- [`screen_brightness.sh`](./scripts/screen_brightness.sh) - script to control the brightness of the display;
+- [`n900-battery-monitor`](./scripts/n900-battery-monitor) - battery protection for the Nokia N900;
+- [`screenshot.sh`](./scripts/screenshot.sh) - script to creating screenshots with [`imagemagick`](https://wiki.archlinux.org/title/ImageMagick) (depricated, it's used `scrot`.).
 
 ## OS imgs
 [Postmarket OS - N900 ISO](https://images.postmarketos.org/bpo/v24.12/nokia-n900/)
@@ -113,7 +133,7 @@ For example, for user `user`:
 > [!note]
 > If you want to use root access via SSH, you will need to allow `PermitRootLogin yes` in `sshd_config`, but **I do not recommend this** for security reasons.
 
-##  Connect from computer
+####  Connect from computer
 
 On your computer (Linux/macOS/WSL/Windows with OpenSSH):
 
