@@ -46,15 +46,16 @@ Various links, notes and files for Nokia N900.
 
 [Maemo 5](./maemoOS_files/Maemo%205.md)
 
-1. [The Perfect Setup](https://wiki.maemo.org/N900_The_Perfect_Setup)
-2. [MAEMOs.ru](http://maemos.ru/faq/)
-3. [Accessing sensors and actuators](https://mlab.taik.fi/paja/?p=1263)
-4. [Dev reflash instructions's svcavallar](https://gist.github.com/svcavallar/8e7809de10eded30b2d510fcc9685963)
-5. [Latest Official Maemo Development Environment Downloads](http://web.archive.org/web/20131117084237/http://skeiron.org/tablets-dev/maemo_dev_env_downloads/)
-6. [How to Reset a Nokia N900](https://www.wikihow.tech/Reset-a-Nokia-N900)
-7. [Repair/Setup a bricked Nokia N900](https://harald.ist.org/howto/n900/repair_bricked_phone.html)
-8. [Overclocking](https://wiki.maemo.org/Overclocking)
-9. [Archive.org files](https://archive.org/details/nokia_N900)
+1. [maemo viniciuspaes](https://maemo.viniciuspaes.com/)
+2. [The Perfect Setup](https://wiki.maemo.org/N900_The_Perfect_Setup)
+3. [MAEMOs.ru](http://maemos.ru/faq/)
+4. [Accessing sensors and actuators](https://mlab.taik.fi/paja/?p=1263)
+5. [Dev reflash instructions's svcavallar](https://gist.github.com/svcavallar/8e7809de10eded30b2d510fcc9685963)
+6. [Latest Official Maemo Development Environment Downloads](http://web.archive.org/web/20131117084237/http://skeiron.org/tablets-dev/maemo_dev_env_downloads/)
+7. [How to Reset a Nokia N900](https://www.wikihow.tech/Reset-a-Nokia-N900)
+8. [Repair/Setup a bricked Nokia N900](https://harald.ist.org/howto/n900/repair_bricked_phone.html)
+9. [Overclocking](https://wiki.maemo.org/Overclocking)
+10. [Archive.org files](https://archive.org/details/nokia_N900)
 
 ### NITDroid
 
@@ -86,7 +87,7 @@ Various links, notes and files for Nokia N900.
 - https://kicherer.org/joomla/index.php/en/blog/32-recovering-a-non-booting-nokia-n900-with-maemo-from-a-sd-card
 
 - https://wiki.maemo.org/Updating_the_firmware
-- https://wiki.maemo.org/N900_The_Perfect_Setup
+- https://maemo.viniciuspaes.com/flasher/#flasher-3.5
 
 ## HW
 ### RTC backup baterry
