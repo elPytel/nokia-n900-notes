@@ -2,8 +2,7 @@
 
 SC_DIR="Screenshots"
 
-Help()
-{
+function Help() {
 	echo "Creating screenshots with scrot"
 	echo "Without the parameters -p, take a screenshot and place it in the SC folder in the user's home folder."
 	echo "If this folder does not exist, it will create it."
@@ -12,7 +11,7 @@ Help()
 	echo
 	echo "Options:"
 	echo "-d server         X server to contact"
-	echo "-p path           Еhe directory in which you want to place the screenshot"
+	echo "-p path           The directory in which you want to place the screenshot"
 	echo "-h                Description of the script operation"
 }
 
