@@ -46,15 +46,10 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-if ! [ -d "$TARGET" ]; then
-    echo "Target directory $TARGET does not exist."
-    exit 1
-fi
-
 new_val=$(update_backlight $1)
 
 for i in $(seq 1 6); do
-	echo $new_val > "$TARGET\:kb$i/brightness"
+	echo $new_val > "$TARGET:kb$i/brightness"
 	if [ $? -ne 0 ]; then
 		echo "Failed to set brightness for kb$i"
 	fi
