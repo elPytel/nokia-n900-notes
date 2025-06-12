@@ -1,6 +1,7 @@
 # Maemo 5 
 
 - [Maemo 5](#maemo-5)
+  - [SSH](#ssh)
   - [Update OS](#update-os)
   - [Terminal](#terminal)
     - [root](#root)
@@ -9,6 +10,10 @@
   - [Apps](#apps)
     - [Installation](#installation)
     - [Python](#python)
+
+## SSH
+
+[Meamo 5 SSH](../doc/Nokia%20N900%20-%20SSH.md)
 
 ## Update OS
 Update OS:

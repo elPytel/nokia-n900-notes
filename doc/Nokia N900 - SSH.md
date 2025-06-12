@@ -1,4 +1,4 @@
-# Nokia N900 - SSH 
+# Nokia N900 - SSH Maemo
 
 ## Nokia Install
 If you have the [Maemo Extra repository](https://blog.tersmitten.nl/archives/867) enabled and already installed [rootsh](https://blog.tersmitten.nl/archives/852) the only thing we have to do is search for a package named **openssh**. This is a meta package which contains both **client** and **server**. We install this package and it will ask us to choose a root password. After setting this password the installation is finished. We now should be able to login with that password:

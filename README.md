@@ -36,17 +36,15 @@ Various links, notes and files for Nokia N900.
 
 ### Postmarket OS (mOS)
 
-[Postmarket OS](./Postmarket%20OS.md)
+[Postmarket OS](./pmOS_files/Postmarket%20OS.md)
 
 
 ### Maemo Leste
 [Leste](./Leste.md)
 
-1. [Maemo Leste for Nokia N900](https://leste.maemo.org/Nokia_N900)
-
 ### Maemo Fremantle
 
-[Maemo 5](./Maemo%205.md)
+[Maemo 5](./maemoOS_files/Maemo%205.md)
 
 1. [The Perfect Setup](https://wiki.maemo.org/N900_The_Perfect_Setup)
 2. [MAEMOs.ru](http://maemos.ru/faq/)
