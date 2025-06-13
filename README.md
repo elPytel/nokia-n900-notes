@@ -3,7 +3,8 @@ Various links, notes and files for Nokia N900.
 
 - [Nokia N900 Resources](#nokia-n900-resources)
   - [Nokia N900 Notes](#nokia-n900-notes)
-    - [My notes](#my-notes)
+    - [My notes for Maemo](#my-notes-for-maemo)
+    - [My notes for postmarketOS](#my-notes-for-postmarketos)
     - [Other notes](#other-notes)
   - [OS](#os)
     - [Postmarket OS (mOS)](#postmarket-os-mos)
@@ -18,11 +19,15 @@ Various links, notes and files for Nokia N900.
 
 ## Nokia N900 Notes
 
-### My notes
-
+### My notes for Maemo 
 1. [SSH to Maemo](./doc/Nokia%20N900%20-%20SSH.md)
+
+### My notes for postmarketOS
+
+1. [SSH to postmarketOS](./doc/pmos_SSH.md)
 2. [wordgrinder installation on postmarketOS](./doc/pmos_wordgrinder.md)
-3. [Successful overclocking of the SoC on pmOS](./doc/pmos_overclocking.md)
+3. [Podcasts](./doc/pmos_podcasts.md)
+4. [Successful overclocking of the SoC on pmOS](./doc/pmos_overclocking.md)
 
 ### Other notes
 

@@ -10,8 +10,9 @@
   - [Applications](#applications)
     - [installation](#installation-1)
     - [Bash](#bash)
-    - [ssh](#ssh)
-      - [Connect from computer](#connect-from-computer)
+    - [SSH](#ssh)
+  - [More apps](#more-apps)
+  - [Overclocking](#overclocking)
   - [i3wm](#i3wm)
     - [Shortcuts](#shortcuts)
         - [default mode](#default-mode)
@@ -23,6 +24,8 @@
 ## Files for postmarketOS
 
 Useful files for postmarketOS which are oriented to Nokia N900.
+
+![PostmarketOS cheatsheet](../assets/1600px-PostmarketOS_cheatsheet.png)
 
 ### Configs
 
@@ -102,42 +105,63 @@ apk add bash curl git make
 chsh -s /bin/bash user
 ```
 
-### ssh
+### SSH
+[SSH to postmarketOS](../doc/pmos_SSH.md)
 
-Install OpenSSH server
+## More apps
+mupdf-x11 - PDF viewer
 
-```sh
-apk update apk add openssh
+mplayer - video player
+
+```sh	
+nokia-n900:/$ mplayer
+MPlayer UNKNOWN-14.2.0 (C) 2000-2023 MPlayer Team
+226 audio & 469 video codecs
+Usage:   mplayer [options] [url|path/]filename
+
+Basic options: (complete list in the man page)
+ -vo <drv>        select video output driver ('-vo help' for a list)
+ -ao <drv>        select audio output driver ('-ao help' for a list)
+ vcd://<trackno>  play (S)VCD (Super Video CD) track (raw device, no mount)
+ dvd://<titleno>  play DVD title from device instead of plain file
+ -alang/-slang    select DVD audio/subtitle language (by 2-char country code)
+ -ss <position>   seek to given (seconds or hh:mm:ss) position
+ -nosound         do not play sound
+ -fs              fullscreen playback (or -vm, -zoom, details in the man page)
+ -x <x> -y <y>    set display resolution (for use with -vm or -zoom)
+ -sub <file>      specify subtitle file to use (also see -subfps, -subdelay)
+ -playlist <file> specify playlist file
+ -vid x -aid y    select video (x) and audio (y) stream to play
+ -fps x -srate y  change video (x fps) and audio (y Hz) rate
+ -pp <quality>    enable postprocessing filter (details in the man page)
+ -framedrop       enable frame dropping (for slow machines)
+
+Basic keys: (complete list in the man page, also check input.conf)
+ <-  or  ->       seek backward/forward 10 seconds
+ down or up       seek backward/forward  1 minute
+ pgdown or pgup   seek backward/forward 10 minutes
+ < or >           step backward/forward in playlist
+ p or SPACE       pause movie (press any key to continue)
+ q or ESC         stop playing and quit program
+ + or -           adjust audio delay by +/- 0.1 second
+ o                cycle OSD mode:  none / seekbar / seekbar + timer
+ * or /           increase or decrease PCM volume
+ x or z           adjust subtitle delay by +/- 0.1 second
+ r or t           adjust subtitle position up/down, also see -vf expand
+
+ * * * SEE THE MAN PAGE FOR DETAILS, FURTHER (ADVANCED) OPTIONS AND KEYS * * *
 ```
 
-Start and enable SSH server
+pure-maps - maps application
+https://wiki.postmarketos.org/wiki/Pure_Maps
 
-Start immediately:
 
-```sh
-rc-service sshd start
-```
+## Overclocking
 
-Enable at startup:
+![N900 @ 850 MHz](../assets/N900%20@850MHz.png)
 
-```sh
-rc-update add sshd default
-```
-
-Set a password for login (if you don't have one yet)
-
-For example, for user `user`:
-
-`passwd user`
-
-> [!note]
-> If you want to use root access via SSH, you will need to allow `PermitRootLogin yes` in `sshd_config`, but **I do not recommend this** for security reasons.
-
-####  Connect from computer
-
-On your computer (Linux/macOS/WSL/Windows with OpenSSH):
-
-`ssh user@192.168.1.123`
+> [!warning] 
+> Not stable.
 
 ## i3wm
 

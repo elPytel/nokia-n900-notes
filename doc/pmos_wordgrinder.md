@@ -38,4 +38,6 @@ wordgrinder
 
 
 > [!note]
-> App is controled by **esc**, but there is no **esc** key on N900 keyboard.
+> App is controled by **esc**. If you cannot find **esc** key on N900 keyboard, try using **shift + blue arrow + backspace**.
+
+![N900_keymap_us](https://wiki.postmarketos.org/images/thumb/e/e1/N900_keymap_us.jpg/1600px-N900_keymap_us.jpg)
