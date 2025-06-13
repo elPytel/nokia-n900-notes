@@ -7,7 +7,7 @@ Various links, notes and files for Nokia N900.
     - [My notes for postmarketOS](#my-notes-for-postmarketos)
     - [Other notes](#other-notes)
   - [OS](#os)
-    - [Postmarket OS (mOS)](#postmarket-os-mos)
+    - [Postmarket OS (pmOS)](#postmarket-os-pmos)
     - [Maemo Leste](#maemo-leste)
     - [Maemo Fremantle](#maemo-fremantle)
     - [NITDroid](#nitdroid)
@@ -26,8 +26,10 @@ Various links, notes and files for Nokia N900.
 
 1. [SSH to postmarketOS](./doc/pmos_SSH.md)
 2. [wordgrinder installation on postmarketOS](./doc/pmos_wordgrinder.md)
-3. [Podcasts](./doc/pmos_podcasts.md)
-4. [Successful overclocking of the SoC on pmOS](./doc/pmos_overclocking.md)
+3. [Terminal Clock for PMOS (compile native)](./doc/pmos_tty-clock_native.md)
+4. [pmOS APK Packaging for app binaries](./doc/pmos_apk_packaging.md)
+5. [Podcasts](./doc/pmos_podcasts.md)
+6. [Successful overclocking of the SoC on pmOS](./doc/pmos_overclocking.md)
 
 ### Other notes
 
@@ -40,7 +42,7 @@ Various links, notes and files for Nokia N900.
 
 ## OS
 
-### Postmarket OS (mOS)
+### Postmarket OS (pmOS)
 
 [Postmarket OS](./pmOS_files/Postmarket%20OS.md)
 

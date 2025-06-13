@@ -11,7 +11,7 @@
     - [installation](#installation-1)
     - [Bash](#bash)
     - [SSH](#ssh)
-  - [More apps](#more-apps)
+    - [More apps](#more-apps)
   - [Overclocking](#overclocking)
   - [i3wm](#i3wm)
     - [Shortcuts](#shortcuts)
@@ -108,8 +108,14 @@ chsh -s /bin/bash user
 ### SSH
 [SSH to postmarketOS](../doc/pmos_SSH.md)
 
-## More apps
+### More apps
 mupdf-x11 - PDF viewer
+spotifyd - Spotify client
+```sh
+sudo apk add spotifyd
+```
+
+
 
 mplayer - video player
 
