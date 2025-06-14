@@ -115,10 +115,13 @@ size = $(stat -c %s $APP_NAME)
 arch = $APP_ARCH
 EOF
 
+echo -e "Creating fake signature files..."
+touch $APP_NAME-apk/.SIGN.RSA.fakesign
+
 echo -e "Packing APK..."
 tar -czf $APP_NAME-$APP_VERSION.apk -C $APP_NAME-apk .
 
 echo -e "${Green}APK package created: $APP_NAME-$APP_VERSION.apk${NC}"
 echo "Done."
 echo -e "${Blue}To install the package, use:${NC}"
-echo -e "${Green}apk add --allow-untrusted $APP_NAME-$APP_VERSION.apk${NC}"
+echo -e "${Green}sudo apk add --allow-untrusted $APP_NAME-$APP_VERSION.apk${NC}"

@@ -35,8 +35,9 @@ Useful files for postmarketOS which are oriented to Nokia N900.
 
 ### Scripts
 
-- [`apk-builder.sh`](./scripts/apk-builder.sh) - script to build APK packages for postmarketOS;
+
 - [`install.sh`](./scripts/install.sh) - script to symlink files from `scripts` directory to `/usr/local/bin/`;
+- [`apk-builder.sh`](./scripts/apk-builder.sh) - script to build APK packages for postmarketOS;
 - [`kb_brightness.sh`](./scripts/kb_brightness.sh) - script to control the brightness of the keypad backlight LEDs;
 - [`screen_brightness.sh`](./scripts/screen_brightness.sh) - script to control the brightness of the display;
 - [`n900-battery-monitor`](./scripts/n900-battery-monitor) - battery protection for the Nokia N900;

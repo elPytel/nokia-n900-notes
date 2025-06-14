@@ -48,6 +48,12 @@ depend = ncurses
 
 ### Create APK package
 
+Run the script `apk-builder.sh` in the directory where you have the binary file `tty-clock` and the `.PKGINFO` file:
+
+```sh
+./apk-builder.sh
+```
+
 Scipt `apk-builder.sh` will fill the pkginfo file automatically with:
 ```bash
 builddate = $(date +%s)
@@ -57,6 +63,12 @@ arch = $APP_ARCH
 ```
 
 And it will create the APK package with the name: `tty-clock-<version>.apk`.
+
+> [!note]
+> If you want to remove the generated directory `tty-clock-apk`, you can use the `-c` option:
+> ```sh
+> ./apk-builder.sh -c
+> ```
 
 ### Install the package
 ```sh
