@@ -29,7 +29,7 @@ Various links, notes and files for Nokia N900.
 3. [Terminal Clock for PMOS (compile native)](./doc/pmos_tty-clock_native.md)
 4. [pmOS APK Packaging for app binaries](./doc/pmos_apk_packaging.md)
 5. [Podcasts](./doc/pmos_podcasts.md)
-6. [Successful overclocking of the SoC on pmOS](./doc/pmos_overclocking.md)
+6. [(un)Successful overclocking of the SoC on pmOS](./doc/pmos_overclocking.md)
 
 ### Other notes
 
