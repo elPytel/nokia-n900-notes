@@ -108,7 +108,6 @@ cp "$PKGINFO_SRC" "$PKGINFO_DST"
 echo -e "Adding additional metadata to .PKGINFO..."
 
 cat >> "$PKGINFO_DST" <<EOF
-
 builddate = $(date +%s)
 packager = $(whoami)
 size = $(stat -c %s $APP_NAME)
@@ -117,6 +116,12 @@ EOF
 
 echo -e "Creating fake signature files..."
 touch $APP_NAME-apk/.SIGN.RSA.fakesign
+
+echo -e "Changing permissions and ownership..."
+chmod 755 $APP_NAME-apk/usr/bin/$APP_NAME
+chmod 644 $APP_NAME-apk/.PKGINFO
+chmod 644 $APP_NAME-apk/.SIGN.RSA.fakesign
+chown -R root:root $APP_NAME-apk
 
 echo -e "Packing APK..."
 tar -czf $APP_NAME-$APP_VERSION.apk -C $APP_NAME-apk .

@@ -51,7 +51,25 @@ depend = ncurses
 Run the script `apk-builder.sh` in the directory where you have the binary file `tty-clock` and the `.PKGINFO` file:
 
 ```sh
-./apk-builder.sh
+apk-builder.sh
+```
+
+You should see output similar to this:
+```sh
+nokia-n900:~/tty-clock$ apk-builder.sh
+Using application name from .PKGINFO: tty-clock
+Using application version from .PKGINFO: 1.0.0
+Building APK package for tty-clock...
+Creating directories...
+Copy binary to the package directory...
+Creating .PKGINFO metadata...
+Adding additional metadata to .PKGINFO...
+Creating fake signature files...
+Packing APK...
+APK package created: tty-clock-1.0.0.apk
+Done.
+To install the package, use:
+sudo apk add --allow-untrusted tty-clock-1.0.0.apk
 ```
 
 Scipt `apk-builder.sh` will fill the pkginfo file automatically with:
@@ -67,10 +85,16 @@ And it will create the APK package with the name: `tty-clock-<version>.apk`.
 > [!note]
 > If you want to remove the generated directory `tty-clock-apk`, you can use the `-c` option:
 > ```sh
-> ./apk-builder.sh -c
+> apk-builder.sh -n tty-clock -c
 > ```
 
 ### Install the package
 ```sh
 sudo apk add --allow-untrusted tty-clock.apk
 ```
+
+> [!note]
+> In future it would be wise to implement valid signature for the APK package, so you can install it without the `--allow-untrusted` option. For now, you can use this option to install the package.
+
+> [!warning]
+> Be careful when using the `--allow-untrusted` option, as it allows you to install packages that are not signed or verified. Make sure you trust the source of the package before installing it.
