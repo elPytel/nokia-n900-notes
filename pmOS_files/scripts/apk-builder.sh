@@ -124,7 +124,7 @@ chmod 644 $APP_NAME-apk/.SIGN.RSA.fakesign
 chown -R root:root $APP_NAME-apk
 
 echo -e "Packing APK..."
-tar -czf $APP_NAME-$APP_VERSION.apk -C $APP_NAME-apk .
+fakeroot tar -czf $APP_NAME-$APP_VERSION.apk -C $APP_NAME-apk .
 
 echo -e "${Green}APK package created: $APP_NAME-$APP_VERSION.apk${NC}"
 echo "Done."
