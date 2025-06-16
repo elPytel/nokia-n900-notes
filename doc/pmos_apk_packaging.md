@@ -1,27 +1,29 @@
 # pmOS APK Packaging for aplication for binaries
 
 - [pmOS APK Packaging for aplication for binaries](#pmos-apk-packaging-for-aplication-for-binaries)
-  - [Packaging](#packaging)
-    - [Dependencies](#dependencies)
-    - [My script `apk-builder.sh`](#my-script-apk-buildersh)
-  - [Making an APK package for `tty-clock`](#making-an-apk-package-for-tty-clock)
-    - [Create `.PKGINFO` file (for `tty-clock`)](#create-pkginfo-file-for-tty-clock)
-    - [Create APK package](#create-apk-package)
-    - [Install the package](#install-the-package)
+  - [Packaging with Abuild](#packaging-with-abuild)
+    - [Set up](#set-up)
+      - [Install dependencies](#install-dependencies)
+      - [Generate RSA key for signing packages](#generate-rsa-key-for-signing-packages)
+      - [Set up your build environment](#set-up-your-build-environment)
+      - [Set up your local repositories](#set-up-your-local-repositories)
+    - [Basic use of `abuild`](#basic-use-of-abuild)
+    - [Lets build a package!](#lets-build-a-package)
+    - [Resources](#resources)
 
-## Packaging
-To package `tty-clock` for PMOS, you can use my script [`apk-builder.sh`](../pmOS_files/scripts/apk-builder.sh) from the directory `pmOS_files/scripts/tty-clock-apk/`. This script will create an APK package for your application.
+## Packaging with Abuild
 
-I have tested it with the [tty-clock](pmos_tty-clock_native.md) app. 
+Alpine Linux uses `abuild` for building packages. The process involves creating an `APKBUILD` file, which contains the metadata and instructions for building the package.
 
-> [!note] 
-> I have decided not to use the `apkbuild` tool, which is used for building APK packages. I have created a simple script that can be used to build APK packages for any binary application.
+### Set up
 
-### Dependencies
+#### Install dependencies
 
 ```sh
 sudo apk add abuild
 ```
+
+#### Generate RSA key for signing packages
 ```sh
 abuild-keygen -a
 >>> Generating public/private rsa key pair for abuild
@@ -41,118 +43,181 @@ writing RSA key
 sudo cp ~/.abuild/*.rsa.pub /etc/apk/keys/
 ```
 
-
-### My script `apk-builder.sh`
+#### Set up your build environment
+Edit the file `/etc/abuild.conf` as per requirements. The one field to edit is `PACKAGER`, so that you can get credit (or blame) for packages you create.
 
 ```sh
-Usage: ./apk-builder.sh [options]
-This script builds an APK package for pmOS.
-It requires a binary file and a .PKGINFO file in the current directory.
-If the application name is not set, it will be taken from the .PKGINFO file.
-
-Options:
-         -h, --help              Show this help message
-         -n, --name <name>       Name of the application
-         -v, --version <version> Version of the application (default: 1.0.0)
-         -c, --clean             Clean up the build directory
+sudo vim /etc/abuild.conf
 ```
 
-## Making an APK package for `tty-clock`
+`REPODEST=$HOME/packages/`
 
-### Create `.PKGINFO` file (for `tty-clock`)
-`.PKGINFO` file for the package can be created as follows:
+```sh
+sudo addgroup user abuild
+```
+
+> [!note]
+> Relogin to apply the group changes.
+
+#### Set up your local repositories
+Set up your local repositories to look in the local directory where you have your APK packages. You can do this by editing the file `/etc/apk/repositories` and adding the local paths to the repositories.
+
+`/etc/apk/repositories`:
+```
+/home/USER/packages/testing/
+/home/USER/packages/main/
+/home/USER/packages/community/
+```
+
+```shell
+sudo echo /home/user/packages/community/armv7/ >> /etc/apk/repositories
+```
+
+> [!note] 
+> Alpine Linux has 3 repositories:
+
+- **main**: Directly supported official packages which are maintained by the Alpine core team.
+Similar to core/extra repositories in Arch Linux.
+- **community**: Packages that are created by the contributors and developers. Not fully supported, maintenance is dependent on the contributor activity.
+Same as community repository on Arch Linux.
+- **testing**: New packages that are added by contributors. Packages from this repository are accepted into the community repository. This repository is only available on edge (development) branch of Alpine.
+
+Install the package from the local directory:
+```shell
+apk add ~/packages/<channel>/<architecture/<package name>-<package version>.apk
+```
+
+`packages/community/armv7/`
+
+### Basic use of `abuild`
+If you just want to build a package from an `APKBUIL` file, only two command are needed. Both commands operate on an `APKBUILD` file in the current directory, so you should cd into the directory before running them.
+
+- `abuild checksum`: updates the checksums for source files.
+- `abuild -r`: builds the package.
+
+
+### Lets build a package!
+We want to build a package for `tty-clock`, which should be available in the `community` repository.
+First, create a directory `community` for development and packagging:
+```shell
+mkdir community
+cd community
+```
+
+Now download the source code of `tty-clock`:
+```shell
+git clone <repository URL>
+```
+
+Create template for the `APKBUILD` file:
+```shell
+newapkbuild tty-clock
+cd tty-clock
+```
+
+This will create a file named `APKBUILD` in the `tty-clock` directory. You can also create the file manually if you prefer.
+
+Now compile the source code of `tty-clock`:
+```shell
+make
+```
+
+Update the `APKBUILD` file with the correct information, such as `pkgname`, `pkgver`, `pkgrel`, `pkgdesc`, `url`, `arch`, `license`, `depends`, and `makedepends`.
+
+Without automtic compilation:
+```shell
+# Contributor: Martin Duquesnoy <xorg62@gmail.com>
+# Maintainer: elPytel <jaroslav.korner1@gmail.com>
+pkgname=tty-clock
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="Terminal clock"
+url="https://github.com/xorg62/tty-clock"
+arch="armv7"
+license="BSD-3-Clause"
+depends="ncurses"
+makedepends="ncurses-dev"
+source="tty-clock"
+options="!check"
+
+build() {
+    cp ./tty-clock "$srcdir/tty-clock"
+}
+
+package() {
+    install -Dm755 "$srcdir/tty-clock" "$pkgdir/usr/bin/tty-clock"
+}
+```
+
+Create the checksum for the source files. This will update the `APKBUILD` file with the checksums of the source files:
+```shell
+abuild checksum
+```
 
 ```txt
-maintainer = Martin Duquesnoy <xorg62@gmail.com>
-pkgname = tty-clock
-pkgver = 1.0.0
-pkgdesc = Terminal clock
-url = https://github.com/xorg62/tty-clock
-license = BSD-3-Clause
-depend = ncurses
+
+sha512sums="
+df17d7b62b331b12ae8bd01f2c53b5fde6d1be231d3678f183d7cdde5dd532cc9d78e14cd6d1bb3f12daa4099cecab1a40b668c413d81953c034dd9f7a25d20e  tty-clock
+"
 ```
 
-### Create APK package
-
-Run the script `apk-builder.sh` in the directory where you have the binary file `tty-clock` and the `.PKGINFO` file:
-
-```sh
-apk-builder.sh
+Build the package:
+```shell
+abuild -r
 ```
 
-You should see output similar to this:
-```sh
-nokia-n900:~/tty-clock$ sudo apk-builder.sh
-Using application name from .PKGINFO: tty-clock
-Using application version from .PKGINFO: 1.0.0
-Building APK package for tty-clock...
-Creating directories...
-Copy binary to the package directory...
-Creating .PKGINFO metadata...
-Adding additional metadata to .PKGINFO...
-Creating fake signature files...
-Packing APK...
-APK package created: tty-clock-1.0.0.apk
-Done.
-To install the package, use:
-sudo apk add --allow-untrusted tty-clock-1.0.0.apk
-```
-
-Scipt `apk-builder.sh` will fill the pkginfo file automatically with:
-```bash
-builddate = $(date +%s)
-packager = $(whoami)
-size = $(stat -c %s $APP_NAME)
-arch = $APP_ARCH
-```
-
-And it will create the APK package with the name: `tty-clock-<version>.apk`.
+The package will be built and placed in the `~/packages/community/armv7/` directory (or the directory you specified in `/etc/abuild.conf`).
 
 > [!note]
-> If you want to remove the generated directory `tty-clock-apk`, you can use the `-c` option:
-> ```sh
-> apk-builder.sh -n tty-clock -c
-> ```
+> We set the `REPODEST` variable in `/etc/abuild.conf` to point to `~/packages/`, so the built packages will be placed in that directory.
+> Architecture is set to `armv7` in the `APKBUILD` file, which selects the correct subdirectory in the `~/packages/community/` directory.
 
-This how the archive structure should look like:
-
-```sh
-nokia-n900:~/tty-clock$ tar -tvzf tty-clock-1.0.0.apk
--rw-r--r-- root/root       256 2025-06-14 11:15:59 .PKGINFO
--rw-r--r-- root/root         0 2025-06-14 11:15:59 .SIGN.RSA.fakesign
-drwxr-xr-x root/root         0 2025-06-14 11:15:59 usr/
-drwxr-xr-x root/root         0 2025-06-14 11:15:59 usr/bin/
--rwxr-xr-x root/root     35632 2025-06-14 11:15:59 usr/bin/tty-clock
-drwxr-xr-x root/root         0 2025-06-14 11:15:59 var/
-drwxr-xr-x root/root         0 2025-06-14 11:15:59 var/db/
-drwxr-xr-x root/root         0 2025-06-14 11:15:59 var/db/apk/
-````
-
-> [!note]
-> The `.PKGINFO` file must be first in the archive, otherwise the APK package will not be recognized by the `apk` tool.
-
-### Install the package
-```sh
-sudo apk add --allow-untrusted --no-interactive tty-clock-1.0.0.apk
+Install the package:
+```shell
+apk add ~/packages/community/armv7/tty-clock-1.0.0-r0.apk
 ```
 
-```sh
-nokia-n900:~/tty-clock$ sudo apk add --allow-untrusted tty-clock-1.0.0.apk
-doas (user@nokia-n900) password:
-WARNING: Support for packages without datahash will be dropped in apk-tools 3.
-The following NEW packages will be installed:
-  ncurses tty-clock
-Need to download 75 KiB of packages.
-After this operation, 187 KiB of additional disk space will be used.
-(1/2) Installing ncurses (6.5_p20241006-r3)
-(2/2) Installing tty-clock (1.0.0)
-WARNING: Support for packages without datahash will be dropped in apk-tools 3.
-Executing busybox-1.37.0-r12.trigger
-1371 MiB in 855 packages
+You can update the apk index to include the new package:
+```shell
+sudo apk update
 ```
 
-> [!note]
-> In future it would be wise to implement valid signature for the APK package, so you can install it without the `--allow-untrusted` option. For now, you can use this option to install the package.
+APKBUILD file example for git: (in progess...)
+```shell
+# Contributor: Martin Duquesnoy <xorg62@gmail.com>
+# Maintainer: elPytel <jaroslav.korner1@gmail.com>
+pkgname=tty-clock
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="Terminal clock"
+url="https://github.com/xorg62/tty-clock"
+arch="armv7"
+license="BSD-3-Clause"
+depends="ncurses"
+makedepends="ncurses-dev git"
+source="git+https://github.com/xorg62/tty-clock.git"
+builddir="$srcdir/$pkgname"
 
-> [!warning]
-> Be careful when using the `--allow-untrusted` option, as it allows you to install packages that are not signed or verified. Make sure you trust the source of the package before installing it.
+build() {
+    make
+}
+
+check() {
+    :
+}
+
+package() {
+    install -Dm755 tty-clock "$pkgdir/usr/bin/tty-clock"
+}
+```
+
+
+
+### Resources
+- [Creating an Alpine package](https://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package#)
+- [Setup your system](https://wiki.alpinelinux.org/wiki/Include:Setup_your_system_and_account_for_building_packages)
+- [Abuild and Helpers](https://wiki.alpinelinux.org/wiki/Abuild_and_Helpers)
+- [APKBUILD Reference](https://wiki.alpinelinux.org/wiki/APKBUILD_Reference)
+- [build an alpine package](https://www.matthewparris.org/build-an-alpine-package/)
+- [alpine packaging setup](https://blog.orhun.dev/alpine-packaging-setup/)
+- [Creating Alpine Linux Packages](https://gist.github.com/XtendedGreg/ebd54547a28178b443aa521fed571397)
