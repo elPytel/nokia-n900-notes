@@ -1,19 +1,17 @@
 # Maemo 5 
 
 - [Maemo 5](#maemo-5)
-  - [SSH](#ssh)
   - [Update OS](#update-os)
   - [Terminal](#terminal)
     - [root](#root)
-  - [Repo](#repo)
-    - [Repository](#repository)
+    - [SSH](#ssh)
+  - [Repository](#repository)
+    - [Mirrors](#mirrors)
   - [Apps](#apps)
-    - [Installation](#installation)
+    - [Installation from `.install` files](#installation-from-install-files)
+    - [Installation from `.deb` files](#installation-from-deb-files)
     - [Python](#python)
 
-## SSH
-
-[Meamo 5 SSH](../doc/Nokia%20N900%20-%20SSH.md)
 
 ## Update OS
 Update OS:
@@ -27,46 +25,35 @@ CSSU:
 
 ## Terminal
 ### root
-https://wiki.maemo.org/Root_access
-
 
 `rootsh` is installable through Hildon Application Manager. You will need it in any circumstance where you need root access to your device.  
 
-rootsh
-http://repository.maemo.org/extras/pool/fremantle/free/r/rootsh/rootsh_1.8_all.deb
+`rootsh` download links: [repository.maemo.org/rootsh_1.8_all.deb](http://repository.maemo.org/extras/pool/fremantle/free/r/rootsh/rootsh_1.8_all.deb)
 
 
 ```bash
 sudo gainroot
 ```
 
-rootsh will ask for a sudo password, though, so on top of rootsh you can either install sudser, to be found here  
-[http://maemo.org/packages/view/sudser/](http://maemo.org/packages/view/sudser/)  
+`rootsh` will ask for a sudo password, though, so on top of rootsh you can either install sudser, to be found here: 
+[sudser](http://maemo.org/packages/view/sudser/)  
   
 Or you can manually edit the sudo requirements in  
-/etc/sudoers.d/01sudo and add sudo as a passwordless command.
+`/etc/sudoers.d/01sudo` and add sudo as a passwordless command.
 
-sudser
-http://repository.maemo.org/extras/pool/diablo/free/s/sudser/sudser_0.2.0-2_all.deb
-http://repository.maemo.org/extras/pool/fremantle/free/s/sudser/
-https://web.archive.org/web/20200927093559/http://repository.maemo.org/extras/pool/fremantle/free/s/sudser/sudser_0.2.0-4_all.deb
-
-## Repo
-
-The servers [repository.maemo.org](repository.maemo.org) are down.
-But a backup is available for download at:
-[web.archive.org](https://web.archive.org/web/20250201032157/http://repository.maemo.org/)
-
-Mirror:
-- [talk.maemo.org](https://talk.maemo.org/showthread.php?t=101524&page=3)
-- [maemo.plan9.de](https://maemo.plan9.de/)
-- [maemo.plan9.de/apt-mirror](https://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/)
+`sudser`
+- http://repository.maemo.org/extras/pool/diablo/free/s/sudser/sudser_0.2.0-2_all.deb
+- http://repository.maemo.org/extras/pool/fremantle/free/s/sudser/
+- https://web.archive.org/web/20200927093559/http://repository.maemo.org/extras/pool/fremantle/free/s/sudser/sudser_0.2.0-4_all.deb
 
 
-> [!note]
-> Check [install](./maemoOS_files/repository/) files for repository configuration.
+- [maemo.org/Root_access](https://wiki.maemo.org/Root_access)
 
-### Repository
+### SSH
+
+[Meamo 5 SSH](../doc/Nokia%20N900%20-%20SSH.md)
+
+## Repository
 By default, the N900 only has the Ovi Store and firmware update catalogs in the list. However, a wider selection of applications is available on Maemo user servers. You have to add them manually:
 
 ```txt
@@ -91,8 +78,29 @@ Distribution: fremantle
 Components: user
 ```
 
+> [!note]
+> Check [install](./repository/) files for repository configuration.
+
+> [!warning]
+> The servers [repository.maemo.org](repository.maemo.org) are down at the moment of writing this tutorial. But a backup is available for download at:
+[web.archive.org](https://web.archive.org/web/20250201032157/http://repository.maemo.org/), or you can use the mirrors listed below.
+
+
 Source:
-- https://www.idnes.cz/mobil/aplikace/deset-a-dve-vylepseni-nokie-n900-aplikace-ktere-musite-mit.A100209_192018_programy_lhc
+- [deset-a-dve-vylepseni-nokie-n900](https://www.idnes.cz/mobil/aplikace/deset-a-dve-vylepseni-nokie-n900-aplikace-ktere-musite-mit.A100209_192018_programy_lhc)
+
+### Mirrors
+
+Mirrors of the Maemo repository can be found at:
+- [talk.maemo.org](https://talk.maemo.org/showthread.php?t=101524&page=3)
+- [maemo.plan9.de](https://maemo.plan9.de/)
+- [maemo.plan9.de/apt-mirror](https://maemo.plan9.de/apt-mirror/mirror/repository.maemo.org/)
+
+> [!note]
+> Or you can install mirrors from `*.install` files in the [`maemoOS_files/repository/`](./repository/) directory.
+
+> [!warning]
+> Use the mirrors at your own risk, as they may not be up-to-date or reliable.
 
 ## Apps
 - [talk.maemo.org](https://talk.maemo.org/showthread.php?t=100636)
@@ -104,15 +112,19 @@ List of recommended applications for the Nokia N900:
 - VNC Viewer
 - Personal IP address
 
-### Installation
+### Installation from `.install` files 
+You can install applications on Maemo 5 using `.install` files, which configure repositories and trigger application installation from them. Internet access is required to use `.install` files, and you can open them with the Hildon Application Manager.
+
+### Installation from `.deb` files
+To install applications on Maemo 5, you can use `.deb` files. These files can be installed using the `dpkg` command.
 ```bash
 dpkg -i <name>.deb
 ```
 
-- [Installing_applications](https://wiki.maemo.org/Installing_applications)
-
 > [!note]
-> Check the [maemoOS_files](./maemoOS_files/deb/) directory for `.deb` files.
+> Check the [maemoOS_files/deb/](./deb/) directory for `.deb` files.
+
+- [Installing_applications](https://wiki.maemo.org/Installing_applications)
 
 ### Python
 - https://wiki.maemo.org/PyMaemo/QuickStartGuide

@@ -33,7 +33,7 @@ function clean() {
         echo -e "${Red}Error:${NC} Build directory $APP_NAME-apk does not exist."
         exit 1
     fi
-    rm -r $APP_NAME-apk
+    sudo rm -r $APP_NAME-apk
     echo -e "${Green}Done.${NC}"
     exit 0
 }
@@ -114,17 +114,22 @@ size = $(stat -c %s $APP_NAME)
 arch = $APP_ARCH
 EOF
 
-echo -e "Creating fake signature files..."
-touch $APP_NAME-apk/.SIGN.RSA.fakesign
-
 echo -e "Changing permissions and ownership..."
 chmod 755 $APP_NAME-apk/usr/bin/$APP_NAME
 chmod 644 $APP_NAME-apk/.PKGINFO
-chmod 644 $APP_NAME-apk/.SIGN.RSA.fakesign
 chown -R root:root $APP_NAME-apk
 
 echo -e "Packing APK..."
-fakeroot tar -czf $APP_NAME-$APP_VERSION.apk -C $APP_NAME-apk .
+# .PKGINFO has to be packed first!
+fakeroot tar -czf $APP_NAME-$APP_VERSION.apk -C $APP_NAME-apk .PKGINFO usr var
+
+# sign the APK package
+echo -e "Signing the APK package..."
+if ! command -v abuild-sign &> /dev/null; then
+    echo -e "${Red}Error:${NC} abuild-sign command not found. Please install abuild."
+    exit 1
+fi
+abuild-sign $APP_NAME-$APP_VERSION.apk
 
 echo -e "${Green}APK package created: $APP_NAME-$APP_VERSION.apk${NC}"
 echo "Done."
