@@ -1,6 +1,3 @@
-0x149970 - 1.35
-0x14c080 - 1.36
-0x14e790 - 1.37
 		
 		opp4-720000000 {
 			opp-hz = < 0x00 0x2aea5400 >;
@@ -19,7 +16,6 @@
 			opp-microvolt = < 0x14c080 0x14c080 0x14c080 >;
 			opp-supported-hw = < 0xffffffffff 0x03 >;
 		};
-
 
 		opp5-900000000 {
 			opp-hz = < 0x00 0x35a4E900 >;

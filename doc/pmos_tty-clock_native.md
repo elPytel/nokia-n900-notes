@@ -30,6 +30,8 @@ make
 sudo cp tty-clock /usr/local/bin/
 ```
 
+![tty-clock](../assets/IMG_20250616_tty-clock.jpg)
+
 ## Next to read
 - [pmOS APK Packaging for app binaries](./pmos_apk_packaging.md)
 

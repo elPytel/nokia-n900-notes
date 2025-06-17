@@ -35,9 +35,7 @@ Useful files for postmarketOS which are oriented to Nokia N900.
 
 ### Scripts
 
-
 - [`install.sh`](./scripts/install.sh) - script to symlink files from `scripts` directory to `/usr/local/bin/`;
-- [`apk-builder.sh`](./scripts/apk-builder.sh) - script to build APK packages for postmarketOS;
 - [`kb_brightness.sh`](./scripts/kb_brightness.sh) - script to control the brightness of the keypad backlight LEDs;
 - [`screen_brightness.sh`](./scripts/screen_brightness.sh) - script to control the brightness of the display;
 - [`n900-battery-monitor`](./scripts/n900-battery-monitor) - battery protection for the Nokia N900;
@@ -173,6 +171,8 @@ https://wiki.postmarketos.org/wiki/Pure_Maps
 > Not stable.
 
 ## i3wm
+
+To modify the i3 window manager configuration, you'll primarily be working with the `~/.config/i3/config` file (or `~/.i3/config`).
 
 ### Shortcuts
 ##### default mode

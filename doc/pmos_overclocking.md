@@ -241,12 +241,25 @@ My final configuration for `oop5` (I repeat, it may not work for you):
             };
 ```
 
+| HEX      | MHz     |
+|----------|---------|
+| 0x7735940  | 125 |
+| 0x2aea5400 | 720 |
+| 0x2faf0800 | 800 |
+| 0x32a9f880 | 850 |
+| 0x350c5280 | 890 |
+| 0x35a4E900 | 900 |
+
+| HEX      | Voltage (V) |
+|----------|-------------|
+| 0x149970 | 1.35 |
+| 0x14c080 | 1.36 |
+| 0x14e790 | 1.37 |
+
 ## Useful Links
 
-- [A superficial description of the `opp-table`
-syntax](https://www.kernel.org/doc/Documentation/devicetree/bindings/opp/opp.txt);
+- [A superficial description of the `opp-table` syntax](https://www.kernel.org/doc/Documentation/devicetree/bindings/opp/opp.txt);
 
 - [Maemo Overclocking wiki page](https://wiki.maemo.org/Overclocking);
 
-- [A helpful note about maximum
-voltage](https://talk.maemo.org/showpost.php?p=606031&postcount=2375);
+- [A helpful note about maximum voltage](https://talk.maemo.org/showpost.php?p=606031&postcount=2375);

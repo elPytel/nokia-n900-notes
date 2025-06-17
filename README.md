@@ -39,6 +39,7 @@ Various links, notes and files for Nokia N900.
 4. [Ollieparanoid's Dogfooding:N900](https://wiki.postmarketos.org/wiki/User:Ollieparanoid/Dogfooding:N900)
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
 6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
+7. [maemo and game emulators](https://emo185.wordpress.com/2010/02/19/n900-a-quick-guide-to-emulators-how-to-install-them-via-maemo-site/)
 
 ## OS
 
