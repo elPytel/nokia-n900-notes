@@ -1,0 +1,33 @@
+# Contributor: Martin Duquesnoy <xorg62@gmail.com>
+# Maintainer: elPytel <jaroslav.korner1@gmail.com>
+pkgname=tty-clock
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="Terminal clock"
+url="https://github.com/xorg62/tty-clock"
+arch="armv7"
+license="BSD-3-Clause"
+depends="ncurses"
+makedepends="ncurses-dev git make gcc"
+source=""
+builddir="$srcdir/$pkgname"
+
+prepare() {
+    source="https://github.com/xorg62/tty-clock.git"
+    if [ ! -d "$builddir" ]; then
+        git clone "$source" "$builddir"
+    fi
+    cd "$builddir"
+}
+
+build() {
+    make
+}
+
+check() {
+    :
+}
+
+package() {
+    install -Dm755 tty-clock "$pkgdir/usr/bin/tty-clock"
+}

@@ -1,0 +1,33 @@
+# Contributor: elPytel <jaroslav.korner1@gmail.com>
+# Maintainer: elPytel <jaroslav.korner1@gmail.com>
+pkgname=bf-interpreter
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="Brainfuck interpreter written in C"
+url="https://github.com/elPytel/BF_interpreter"
+arch="armv7"
+license="MIT"
+depends=""
+makedepends="git make clang"
+source=""
+builddir="$srcdir/$pkgname"
+
+prepare() {
+    source="https://github.com/elPytel/BF_interpreter.git"
+    if [ ! -d "$builddir" ]; then
+        git clone "$source" "$builddir"
+    fi
+    cd "$builddir"
+}
+
+build() {
+    make
+}
+
+check() {
+    :
+}
+
+package() {
+    install -Dm755 bf "$pkgdir/usr/bin/bf-interpreter"
+}

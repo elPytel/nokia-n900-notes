@@ -9,6 +9,7 @@
       - [Set up your local repositories](#set-up-your-local-repositories)
     - [Basic use of `abuild`](#basic-use-of-abuild)
     - [Lets build a package!](#lets-build-a-package)
+    - [APKBUILD file with git use and automatic compilation](#apkbuild-file-with-git-use-and-automatic-compilation)
     - [Resources](#resources)
 
 ## Packaging with Abuild
@@ -69,6 +70,8 @@ Set up your local repositories to look in the local directory where you have you
 /home/USER/packages/community/
 ```
 
+`packages/community/armv7/`
+
 ```shell
 sudo echo /home/user/packages/community/armv7/ >> /etc/apk/repositories
 ```
@@ -86,8 +89,6 @@ Install the package from the local directory:
 ```shell
 apk add ~/packages/<channel>/<architecture/<package name>-<package version>.apk
 ```
-
-`packages/community/armv7/`
 
 ### Basic use of `abuild`
 If you just want to build a package from an `APKBUIL` file, only two command are needed. Both commands operate on an `APKBUILD` file in the current directory, so you should cd into the directory before running them.
@@ -149,11 +150,18 @@ package() {
 }
 ```
 
+- `depend` is the runtime dependency, which is `ncurses` in this case.
+- `makedepends` is the build-time dependency, which is `ncurses-dev` in this case.
+- `source` is the source file, which is `tty-clock` binary in this case.
+- `options` is set to `!check` to skip the test phase, as `tty-clock` does not have any tests.
+
+
 Create the checksum for the source files. This will update the `APKBUILD` file with the checksums of the source files:
 ```shell
 abuild checksum
 ```
 
+This will generate a `sha512sums` line in the `APKBUILD` file, which looks like this:
 ```txt
 
 sha512sums="
@@ -166,6 +174,8 @@ Build the package:
 abuild -r
 ```
 
+It will also update the index file in the `~/packages/community/armv7/` directory, which contains the information about the package.
+
 The package will be built and placed in the `~/packages/community/armv7/` directory (or the directory you specified in `/etc/abuild.conf`).
 
 > [!note]
@@ -176,13 +186,18 @@ Install the package:
 ```shell
 apk add ~/packages/community/armv7/tty-clock-1.0.0-r0.apk
 ```
+or if you have set up the local repositories correctly, you can simply run:
+```shell
+apk add tty-clock
+```
 
 You can update the apk index to include the new package:
 ```shell
 sudo apk update
 ```
 
-APKBUILD file example for git: (in progess...)
+### APKBUILD file with git use and automatic compilation
+[APKBUILD](../pmOS_files/applications/community/tty-clock/APKBUILD) file example for git use:
 ```shell
 # Contributor: Martin Duquesnoy <xorg62@gmail.com>
 # Maintainer: elPytel <jaroslav.korner1@gmail.com>
@@ -195,8 +210,16 @@ arch="armv7"
 license="BSD-3-Clause"
 depends="ncurses"
 makedepends="ncurses-dev git"
-source="git+https://github.com/xorg62/tty-clock.git"
+source=""
 builddir="$srcdir/$pkgname"
+
+prepare() {
+    source="https://github.com/xorg62/tty-clock.git"
+    if [ ! -d "$builddir" ]; then
+        git clone "$source" "$builddir"
+    fi
+    cd "$builddir"
+}
 
 build() {
     make
@@ -211,7 +234,7 @@ package() {
 }
 ```
 
-
+It uses the `git` command to clone the repository and build the package automatically. The `prepare()` function is used to clone the repository if it does not exist in the build directory. The `build()` function compiles the source code, and the `package()` function installs the binary into the package directory.
 
 ### Resources
 - [Creating an Alpine package](https://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package#)
@@ -221,3 +244,4 @@ package() {
 - [build an alpine package](https://www.matthewparris.org/build-an-alpine-package/)
 - [alpine packaging setup](https://blog.orhun.dev/alpine-packaging-setup/)
 - [Creating Alpine Linux Packages](https://gist.github.com/XtendedGreg/ebd54547a28178b443aa521fed571397)
+- [archlinux abould man page](https://man.archlinux.org/man/extra/abuild/abuild.1.en)

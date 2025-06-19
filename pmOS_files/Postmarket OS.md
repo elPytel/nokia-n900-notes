@@ -4,6 +4,7 @@
   - [Files for postmarketOS](#files-for-postmarketos)
     - [Configs](#configs)
     - [Scripts](#scripts)
+    - [APKBUILD files](#apkbuild-files)
   - [OS imgs](#os-imgs)
     - [installation](#installation)
   - [login](#login)
@@ -12,6 +13,7 @@
     - [Bash](#bash)
     - [SSH](#ssh)
     - [More apps](#more-apps)
+      - [Brain-fuck interpreter](#brain-fuck-interpreter)
   - [Overclocking](#overclocking)
   - [i3wm](#i3wm)
     - [Shortcuts](#shortcuts)
@@ -40,6 +42,11 @@ Useful files for postmarketOS which are oriented to Nokia N900.
 - [`screen_brightness.sh`](./scripts/screen_brightness.sh) - script to control the brightness of the display;
 - [`n900-battery-monitor`](./scripts/n900-battery-monitor) - battery protection for the Nokia N900;
 - [`screenshot.sh`](./scripts/screenshot.sh) - script to creating screenshots with [`imagemagick`](https://wiki.archlinux.org/title/ImageMagick) (depricated, it's used `scrot`.).
+
+### APKBUILD files  
+- [`BF_interpreter`](./applications/community/BF_interpreter/APKBUILD) 
+
+Files for building packages for postmarketOS using [`apkbuild`](https://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package#APKBUILD_Reference).
 
 ## OS imgs
 [Postmarket OS - N900 ISO](https://images.postmarketos.org/bpo/v24.12/nokia-n900/)
@@ -162,6 +169,11 @@ Basic keys: (complete list in the man page, also check input.conf)
 pure-maps - maps application
 https://wiki.postmarketos.org/wiki/Pure_Maps
 
+#### Brain-fuck interpreter
+![brain-fuck](../assets/pmos_bf-interpreter.png)
+
+- [repository](https://github.com/elPytel/BF_interpreter)
+- [APKBUILD](./applications/community/BF_interpreter/APKBUILD)
 
 ## Overclocking
 
