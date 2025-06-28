@@ -16,6 +16,7 @@ Various links, notes and files for Nokia N900.
   - [FIX Nokia](#fix-nokia)
   - [HW](#hw)
     - [Neo900](#neo900)
+    - [Serial port](#serial-port)
     - [RTC backup baterry](#rtc-backup-baterry)
 
 ## Nokia N900 Notes
@@ -40,8 +41,7 @@ Various links, notes and files for Nokia N900.
 4. [Ollieparanoid's Dogfooding:N900](https://wiki.postmarketos.org/wiki/User:Ollieparanoid/Dogfooding:N900)
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
 6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
-7. [maemo and game emulators](https://emo185.wordpress.com/2010/02/19/n900-a-quick-guide-to-emulators-how-to-install-them-via-maemo-site/)
-8. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
+9. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
 
 ## OS
 
@@ -68,6 +68,9 @@ Various links, notes and files for Nokia N900.
 9. [Overclocking](https://wiki.maemo.org/Overclocking)
 10. [Archive.org files](https://archive.org/details/nokia_N900)
 
+- [maemo and game emulators](https://emo185.wordpress.com/2010/02/19/n900-a-quick-guide-to-emulators-how-to-install-them-via-maemo-site/)
+   - [ROMs](https://vimm.net/vault/GBA)
+
 ### NITDroid
 
 1. [Nokia N900 NITDroid multiboot with Android 2.3 Gingerbread (depricated, just for general information)](https://github.com/mattiacantalu/Nokia_N900_NITDroid)
@@ -78,9 +81,10 @@ Various links, notes and files for Nokia N900.
 
 ### Debian
 1. [Debian on Nokia N900](https://wiki.debian.org/DebianOnN900)
-2. [Debian900](https://github.com/dderby/debian900)
-3. [Easy Debian](https://wiki.maemo.org/Easy_Debian)
-4. [Qole's Debian](https://qole.org/files/debian900/)
+2. [Debian on N900](https://n900.elektranox.org/index.html)
+3. [Debian900](https://github.com/dderby/debian900)
+4. [Easy Debian](https://wiki.maemo.org/Easy_Debian)
+5. [Qole's Debian](https://qole.org/files/debian900/)
 
 
 ### Other OS
@@ -106,6 +110,9 @@ Various links, notes and files for Nokia N900.
 
 1. [maemo.cloud-7.de](http://maemo.cloud-7.de/)
 2. [maemo.cloud-7.de/Neo900](http://maemo.cloud-7.de/Neo900/)
+
+### Serial port
+- [elektranox.org/serial-adapter](https://n900.elektranox.org/serial-adapter.html)
 
 ### RTC backup baterry
 - [Nokia N900 Back-Up Battery Replacement?](https://talk.maemo.org/showthread.php?t=92199)

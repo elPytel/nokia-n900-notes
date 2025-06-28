@@ -2,6 +2,7 @@
 
 - [Maemo 5](#maemo-5)
   - [Update OS](#update-os)
+  - [Lock Code](#lock-code)
   - [Terminal](#terminal)
     - [root](#root)
     - [SSH](#ssh)
@@ -22,6 +23,9 @@ ISO:
 
 CSSU:
 - https://wiki.maemo.org/Community_SSU
+
+## Lock Code
+Default lockcode is: **12345**
 
 ## Terminal
 ### root
