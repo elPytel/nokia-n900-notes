@@ -1,5 +1,7 @@
 # Leste
 
+![](./assets/Leste/IMG_20250628_165652559.jpg)
+
 - [Leste](#leste)
   - [Links](#links)
   - [Installation of Maemo Leste on Nokia N900](#installation-of-maemo-leste-on-nokia-n900)
