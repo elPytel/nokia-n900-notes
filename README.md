@@ -15,6 +15,7 @@ Various links, notes and files for Nokia N900.
     - [Other OS](#other-os)
   - [FIX Nokia](#fix-nokia)
   - [HW](#hw)
+    - [Neo900](#neo900)
     - [RTC backup baterry](#rtc-backup-baterry)
 
 ## Nokia N900 Notes
@@ -40,6 +41,7 @@ Various links, notes and files for Nokia N900.
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
 6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
 7. [maemo and game emulators](https://emo185.wordpress.com/2010/02/19/n900-a-quick-guide-to-emulators-how-to-install-them-via-maemo-site/)
+8. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
 
 ## OS
 
@@ -99,6 +101,14 @@ Various links, notes and files for Nokia N900.
 - https://maemo.viniciuspaes.com/flasher/#flasher-3.5
 
 ## HW
+
+### Neo900
+
+1. [maemo.cloud-7.de](http://maemo.cloud-7.de/)
+2. [maemo.cloud-7.de/Neo900](http://maemo.cloud-7.de/Neo900/)
+
 ### RTC backup baterry
-- https://talk.maemo.org/showthread.php?t=92199
-- https://talk.maemo.org/showthread.php?t=90864
+- [Nokia N900 Back-Up Battery Replacement?](https://talk.maemo.org/showthread.php?t=92199)
+- [losing time/date on battery swap?](https://talk.maemo.org/showthread.php?t=90864)
+
+![Back-Up Battery](./assets/2013-12-29_Nokia_N900_RX-51_Schematics.pdf.jpg)
