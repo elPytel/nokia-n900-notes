@@ -116,6 +116,8 @@ List of recommended applications for the Nokia N900:
 - VNC Viewer
 - Personal IP address
 
+[Games](../doc/maemo_games.md)
+
 ### Installation from `.install` files 
 You can install applications on Maemo 5 using `.install` files, which configure repositories and trigger application installation from them. Internet access is required to use `.install` files, and you can open them with the Hildon Application Manager.
 

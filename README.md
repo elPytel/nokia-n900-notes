@@ -51,7 +51,7 @@ Various links, notes and files for Nokia N900.
 
 
 ### Maemo Leste
-[Leste](./Leste.md)
+[Leste](./maemo_leste_files/Leste.md)
 
 ### Maemo Fremantle
 
@@ -67,9 +67,6 @@ Various links, notes and files for Nokia N900.
 8. [Repair/Setup a bricked Nokia N900](https://harald.ist.org/howto/n900/repair_bricked_phone.html)
 9. [Overclocking](https://wiki.maemo.org/Overclocking)
 10. [Archive.org files](https://archive.org/details/nokia_N900)
-
-- [maemo and game emulators](https://emo185.wordpress.com/2010/02/19/n900-a-quick-guide-to-emulators-how-to-install-them-via-maemo-site/)
-   - [ROMs](https://vimm.net/vault/GBA)
 
 ### NITDroid
 
