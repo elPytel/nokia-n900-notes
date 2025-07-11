@@ -11,6 +11,7 @@
   - [Apps](#apps)
     - [Installation from `.install` files](#installation-from-install-files)
     - [Installation from `.deb` files](#installation-from-deb-files)
+    - [Dewelopment](#dewelopment)
     - [Python](#python)
 
 
@@ -130,10 +131,24 @@ dpkg -i <name>.deb
 > [!note]
 > Check the [maemoOS_files/deb/](./deb/) directory for `.deb` files.
 
-- [Installing_applications](https://wiki.maemo.org/Installing_applications)
+- [maemo: Installing applications](https://wiki.maemo.org/Installing_applications)
+
+### Dewelopment
+
+Thomas Thurman:
+- [Writing apps for the N900](https://blogs.gnome.org/tthurman/2009/09/06/n900-tutorial-contents/)
+  - [part 1](https://blogs.gnome.org/tthurman/2009/09/03/writing-apps-for-the-n900-part-1/)
+  - [part 2 — packaging](https://blogs.gnome.org/tthurman/2009/09/06/writing-apps-for-the-n900-part-2-packaging/)
+
+Thomas Thurman: meego 1.0 mobile application development cookbook 
+
+ 
+[PyMaemo](https://wiki.maemo.org/PyMaemo)
+
+- [Quick Start Guide](https://wiki.maemo.org/PyMaemo/QuickStartGuide)
+- [Status menu widgets](https://wiki.maemo.org/PyMaemo/HildonDesktop#Example_-_Status_menu_widgets_.28Fremantle_only.29)
 
 ### Python
-- https://wiki.maemo.org/PyMaemo/QuickStartGuide
 - https://wiki.maemo.org/Py2deb#Install_py2deb
 - https://talk.maemo.org/showthread.php?t=91341
 - https://gnahackteam.wordpress.com/2013/09/12/how-to-install-python-2-7-5-on-n900-maemo-5/
