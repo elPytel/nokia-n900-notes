@@ -142,14 +142,20 @@ Thomas Thurman:
 
 Thomas Thurman: meego 1.0 mobile application development cookbook 
 
+[Packaging, Deploying and Distributing](https://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Packaging,_Deploying_and_Distributing#Making_Application_Packages)
  
 [PyMaemo](https://wiki.maemo.org/PyMaemo)
 
 - [Quick Start Guide](https://wiki.maemo.org/PyMaemo/QuickStartGuide)
 - [Status menu widgets](https://wiki.maemo.org/PyMaemo/HildonDesktop#Example_-_Status_menu_widgets_.28Fremantle_only.29)
 
+Other:
+
+- [OpenCV](https://www.samontab.com/web/2012/12/installing-opencv-in-the-nokia-n900-maemo/)
+- [MPD on the N900 or how to use your Nokia N900 as a Wireless Home Music System](https://www.samontab.com/web/2012/01/mpd-on-the-n900-or-how-to-use-your-nokia-n900-as-a-wireless-home-music-system/)
+
 ### Python
 - https://wiki.maemo.org/Py2deb#Install_py2deb
 - https://talk.maemo.org/showthread.php?t=91341
-- https://gnahackteam.wordpress.com/2013/09/12/how-to-install-python-2-7-5-on-n900-maemo-5/
+- [how to install python 2.7.5 on n900 maemo 5](https://gnahackteam.wordpress.com/2013/09/12/how-to-install-python-2-7-5-on-n900-maemo-5/)
 - https://www.stochasticgeometry.ie/2010/04/29/python-on-the-nokia-n900/

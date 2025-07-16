@@ -42,6 +42,7 @@ Various links, notes and files for Nokia N900.
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
 6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
 9. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
+- [ter Smitten's web](https://blog.tersmitten.nl/tag/n900)
 
 ## OS
 
@@ -92,6 +93,7 @@ Various links, notes and files for Nokia N900.
 ## FIX Nokia
 
 1. [RescueOS](https://github.com/quitesimpleorg/N900_RescueOS) [(description)](https://quitesimple.org/page/N900rescueOS)
+2. [Reviving an old N900 without lock code](https://blog.tldnr.org/2015/01/10/reviving-an-old-n900-without-lock-code/)
 - https://talk.maemo.org/showthread.php?t=100920
 - https://github.com/mattiacantalu/Nokia-N900-RX-51-20.2010
 - http://maemo.org/downloads/product/Maemo5/backupmenu/
@@ -99,7 +101,7 @@ Various links, notes and files for Nokia N900.
 - https://kicherer.org/joomla/index.php/en/blog/32-recovering-a-non-booting-nokia-n900-with-maemo-from-a-sd-card
 
 - https://wiki.maemo.org/Updating_the_firmware
-- https://maemo.viniciuspaes.com/flasher/#flasher-3.5
+- [Maemo Flasher 3.5 - Download](https://maemo.viniciuspaes.com/flasher/)
 
 ## HW
 
