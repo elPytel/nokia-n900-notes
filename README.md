@@ -14,6 +14,7 @@ Various links, notes and files for Nokia N900.
     - [Debian](#debian)
     - [Other OS](#other-os)
   - [FIX Nokia](#fix-nokia)
+    - [Tools](#tools)
   - [HW](#hw)
     - [Neo900](#neo900)
     - [Serial port](#serial-port)
@@ -43,6 +44,7 @@ Various links, notes and files for Nokia N900.
 6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
 9. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
 - [ter Smitten's web](https://blog.tersmitten.nl/tag/n900)
+- [What do Nokia N900 LED colors mean?](https://n900tips.blogspot.com/2010/04/what-do-nokia-n900-led-colors-mean.html)
 
 ## OS
 
@@ -89,6 +91,7 @@ Various links, notes and files for Nokia N900.
 
 1. [Kali Linux Rolling Edition (depricated)](https://talk.maemo.org/showthread.php?t=96573)
 2. [Arch Linux ARM (depricated)](https://talk.maemo.org/showthread.php?t=81892)
+3. [QUAD BOOT: Maemo, Meego, NITDroid, and Kubuntu Mobile](https://talk.maemo.org/showthread.php?t=74956)
 
 ## FIX Nokia
 
@@ -102,6 +105,19 @@ Various links, notes and files for Nokia N900.
 
 - https://wiki.maemo.org/Updating_the_firmware
 - [Maemo Flasher 3.5 - Download](https://maemo.viniciuspaes.com/flasher/)
+
+### Tools
+Maemo Flasher 3.5:
+
+| File | OS | Size |
+| --- | --- | --- |
+| [maemo_flasher-3.5_2.5.2.2.exe](./tools/flasher-3.5/maemo_flasher-3.5_2.5.2.2.exe) | Windows | 3.5 MB |
+| [maemo_flasher-3.5_2.5.2.2_i386.deb](./tools/flasher-3.5/maemo_flasher-3.5_2.5.2.2_i386.deb) | Linux (Debian i386) | 58 KB |
+| [maemo_flasher-3.5_2.5.2.2.tar.gz](./tools/flasher-3.5/maemo_flasher-3.5_2.5.2.2.tar.gz) | Linux (tarball) | 48 KB |
+| [maemo_flasher-3.5_2.5.2.2_i386.dmg](./tools/flasher-3.5/maemo_flasher-3.5_2.5.2.2_i386.dmg) | Mac OS X (Intel) | 423 KB |
+| [maemo_flasher-3.5_2.5.2.2_ppc.dmg](./tools/flasher-3.5/maemo_flasher-3.5_2.5.2.2_ppc.dmg) | Mac OS X (PPC) | 243 KB |
+| [LICENSE](./tools/flasher-3.5/LICENSE) | - | 14 KB |
+| [Readme_Maemo_Flasher-3.5.txt](./tools/flasher-3.5/Readme_Maemo_Flasher-3.5.txt) | - | 7 KB |
 
 ## HW
 

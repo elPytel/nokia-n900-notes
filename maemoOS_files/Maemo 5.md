@@ -11,7 +11,8 @@
   - [Apps](#apps)
     - [Installation from `.install` files](#installation-from-install-files)
     - [Installation from `.deb` files](#installation-from-deb-files)
-    - [Dewelopment](#dewelopment)
+  - [SW](#sw)
+  - [Development](#development)
     - [Python](#python)
 
 
@@ -133,7 +134,26 @@ dpkg -i <name>.deb
 
 - [maemo: Installing applications](https://wiki.maemo.org/Installing_applications)
 
-### Dewelopment
+## SW
+
+Status Lights
+What do the Nokia N900 LED colors mean?
+
+```
+1. Blue color (blinking): Incoming message (instant message or SMS message or email) or missed call
+2. Orange color (blinking): Battery is Charging
+3. Green color: Battery is fully charged
+4. White (blinking): Stand-by
+5. Red color (blinking): Error
+6. Yellow: Device soft on/off
+7. White (fade in): Power on
+8. White (fade out): Power off
+9. Red (blink once): Webcam on
+```
+- [z/n900-notes](https://github.com/z/n900-notes)
+
+
+## Development
 
 Thomas Thurman:
 - [Writing apps for the N900](https://blogs.gnome.org/tthurman/2009/09/06/n900-tutorial-contents/)
