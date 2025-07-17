@@ -120,6 +120,10 @@ List of recommended applications for the Nokia N900:
 
 [Games](../doc/maemo_games.md)
 
+[Git .deb file](./deb/git_1.6.2-1_armel.deb)
+- [Git for armv7](https://nikosapi.org/software/git/)
+- [Maemo wiki Git](https://talk.maemo.org/showthread.php?t=27352&highlight=git+index-pack)
+
 ### Installation from `.install` files 
 You can install applications on Maemo 5 using `.install` files, which configure repositories and trigger application installation from them. Internet access is required to use `.install` files, and you can open them with the Hildon Application Manager.
 
