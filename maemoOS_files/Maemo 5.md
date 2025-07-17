@@ -12,6 +12,14 @@
     - [Installation from `.install` files](#installation-from-install-files)
     - [Installation from `.deb` files](#installation-from-deb-files)
   - [SW](#sw)
+    - [Status Lights](#status-lights)
+    - [How to get more symbols on Nokia N900?](#how-to-get-more-symbols-on-nokia-n900)
+    - [How to go to Nokia N900 task Manager?](#how-to-go-to-nokia-n900-task-manager)
+    - [How to create a screenshot on Nokia N900](#how-to-create-a-screenshot-on-nokia-n900)
+    - [Media player shortcuts](#media-player-shortcuts)
+    - [Email shortcuts](#email-shortcuts)
+    - [Nokia N900 browser shortcuts](#nokia-n900-browser-shortcuts)
+    - [Writing tips for Nokia N900](#writing-tips-for-nokia-n900)
   - [Development](#development)
     - [Python](#python)
 
@@ -120,6 +128,8 @@ List of recommended applications for the Nokia N900:
 
 [Games](../doc/maemo_games.md)
 
+![Git on Nokia](../assets/Maemo/Nokia%20N900%20git.png)
+
 [Git .deb file](./deb/git_1.6.2-1_armel.deb)
 - [Git for armv7](https://nikosapi.org/software/git/)
 - [Maemo wiki Git](https://talk.maemo.org/showthread.php?t=27352&highlight=git+index-pack)
@@ -140,7 +150,9 @@ dpkg -i <name>.deb
 
 ## SW
 
-Status Lights
+- [n900 tips](https://n900tips.blogspot.com/)
+
+### Status Lights
 What do the Nokia N900 LED colors mean?
 
 ```
@@ -156,6 +168,55 @@ What do the Nokia N900 LED colors mean?
 ```
 - [z/n900-notes](https://github.com/z/n900-notes)
 
+### How to get more symbols on Nokia N900?
+
+Click **Ctrl + Fn key** (below ctrl key)
+
+### How to go to Nokia N900 task Manager?
+
+Click Ctrl+Backspace to immediately to to the task manager
+
+### How to create a screenshot on Nokia N900
+Click **Ctrl + Shift + P** at the same time and you will find the screenshot inside the images folder.
+
+### Media player shortcuts
+1. Ctrl + Space : Play / Pause of current track
+2. Ctrl + Left Arrow: Go to previous track
+3. Ctrl + Right Arrow: Go to next track
+
+### Email shortcuts
+
+1. Ctrl + Enter: Send current Email
+2. Ctrl + R: Reply to current email
+
+### Nokia N900 browser shortcuts
+
+1. Ctrl + N: Open a new browser window.
+2. Ctrl + R: Webpage Refresh/Reload
+3. Ctrl + B: Opens the bookmarks folder
+4. Ctrl + D: Bookmarks the current page
+5. Ctrl + S: Saves current page
+6. Circular Zoom: Clockwize - Zoom in / Counter clockwize - Zoom out
+7. Double click: 100% zoom in
+8. Volume button: + for zoom in and - for zoom out.
+9. Space bar: Go to the end of current page
+10. Shift + Space: Go to the beginning of current page
+11. Ctrl + Shift + O: Activate / deactivate portrait mode (vertical screen mode)
+
+### Writing tips for Nokia N900
+
+1. Ctrl + C: Copy
+2. Ctrl + V: Paste
+3. Ctrl + X: Cut
+4. Ctrl + A: Select all
+5. Ctrl + O: Open
+6. Ctrl + N: Create new
+7. Ctrl + S: Save
+8. Ctrl + Z: Undo
+9. Ctrl + Y: Redo
+10. Ctrl + F: Find
+11. Ctrl + Right Arrow button: Go to the word's end
+12. Ctrl + Left Arrow button: Go to the word's beginning.
 
 ## Development
 
