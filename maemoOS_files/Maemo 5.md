@@ -21,6 +21,7 @@
     - [Email shortcuts](#email-shortcuts)
     - [Nokia N900 browser shortcuts](#nokia-n900-browser-shortcuts)
     - [Writing tips for Nokia N900](#writing-tips-for-nokia-n900)
+  - [Scripts](#scripts)
   - [Development](#development)
     - [Python](#python)
 
@@ -226,6 +227,34 @@ Click **Ctrl + Shift + P** at the same time and you will find the screenshot ins
 10. Ctrl + F: Find
 11. Ctrl + Right Arrow button: Go to the word's end
 12. Ctrl + Left Arrow button: Go to the word's beginning.
+
+## Scripts
+`speaker.ON`
+```bash
+#!/bin/sh
+amixer -c0 set PCM 100%
+amixer -c0 set 'Right PGA Bypass Mixer HP Switc' on
+amixer -c0 set 'Left PGA Bypass Mixer HP' on
+amixer -c0 set 'Left PGA Mixer Line1L' on
+amixer -c0 set 'Left PGA Mixer Line2L' on
+amixer -c0 set 'HP PGA Bypass' 100%
+amixer -c0 set 'Speaker Function' On
+echo "Speaker is ON"
+```
+`speaker.OFF`
+```bash
+#!/bin/sh
+amixer -c0 set PCM 100%
+amixer -c0 set 'Right PGA Bypass Mixer HP Switc' off
+amixer -c0 set 'Left PGA Bypass Mixer HP' off
+amixer -c0 set 'Left PGA Mixer Line1L' off
+amixer -c0 set 'Left PGA Mixer Line2L' off
+amixer -c0 set 'HP PGA Bypass' 0%
+echo "Speaker is OFF"
+```
+
+- [N900 as speaker for Audio/Video devices](https://talk.maemo.org/showthread.php?t=75388)
+- [Resuscitating and Repurposing the Old Nokia N900](https://www.dunsurfin.com/resuscitating-and-repurposing-the-old-nokia-n900/)
 
 ## Development
 

@@ -49,6 +49,7 @@ Various links, notes and files for Nokia N900.
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
 6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
 9. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
+10. [Nokia N900 Versus Motorola Droid](https://gadgetoid.com/2009/12/21/nokia-n900-versus-motorola-droidmilestone/)
 - [ter Smitten's web](https://blog.tersmitten.nl/tag/n900)
 - [What do Nokia N900 LED colors mean?](https://n900tips.blogspot.com/2010/04/what-do-nokia-n900-led-colors-mean.html)
 
@@ -143,6 +144,7 @@ Maemo Flasher 3.5:
 
 ![gg](./assets/Game%20Gripper/IMG_6688.jpg)
 
+- [Thingiverse: Nokia N900 Slide-On Keyboard Gamepad for Emulators](https://www.thingiverse.com/thing:113285)
 - [Gadgetoid: N900 Game Gripper Review](https://gadgetoid.com/2010/08/18/n900-game-gripper-review/)
 - [YouTube: Game Gripper - Nokia N900 - Review](https://www.youtube.com/watch?v=utOYw_8Y8Iw)
 
