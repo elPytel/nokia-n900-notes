@@ -18,6 +18,8 @@ Various links, notes and files for Nokia N900.
   - [HW](#hw)
     - [Neo900](#neo900)
     - [Game pad](#game-pad)
+    - [Game Gripper](#game-gripper)
+    - [OtterBox](#otterbox)
     - [Serial port](#serial-port)
     - [RTC backup baterry](#rtc-backup-baterry)
 
@@ -136,6 +138,19 @@ Maemo Flasher 3.5:
 
 ### Game pad
 - [Hackaday: Nokia N900 Control Pad](https://hackaday.com/2011/12/12/nokia-n900-control-pad-is-perfect-for-gaming-on-the-go/)
+
+### Game Gripper
+
+![gg](./assets/Game%20Gripper/IMG_6688.jpg)
+
+- [Gadgetoid: N900 Game Gripper Review](https://gadgetoid.com/2010/08/18/n900-game-gripper-review/)
+- [YouTube: Game Gripper - Nokia N900 - Review](https://www.youtube.com/watch?v=utOYw_8Y8Iw)
+
+### OtterBox
+
+![](./assets/OtterBox/otterbox-n900-case-apart.jpg)
+
+- [Gadgetoid: OtterBox Commuter Plastic/Rubber Case for Nokia N900 Review](https://gadgetoid.com/2010/05/20/otterbox-commuter-plasticrubber-case-for-nokia-n900-review/)
 
 ### Serial port
 - [elektranox.org/serial-adapter](https://n900.elektranox.org/serial-adapter.html)
