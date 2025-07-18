@@ -17,6 +17,7 @@ Various links, notes and files for Nokia N900.
     - [Tools](#tools)
   - [HW](#hw)
     - [Neo900](#neo900)
+    - [Game pad](#game-pad)
     - [Serial port](#serial-port)
     - [RTC backup baterry](#rtc-backup-baterry)
 
@@ -24,6 +25,9 @@ Various links, notes and files for Nokia N900.
 
 ### My notes for Maemo 
 1. [SSH to Maemo](./doc/Nokia%20N900%20-%20SSH.md)
+2. [SMB on Maemo](./doc/maemo_smb.md)
+3. [(un)successful Git on Maemo](./doc/maemo_git.md)
+4. [(un)successful compilation of Python 3.11](https://github.com/elPytel/Python_3.11_on_N900)
 
 ### My notes for postmarketOS
 
@@ -70,14 +74,15 @@ Various links, notes and files for Nokia N900.
 8. [Repair/Setup a bricked Nokia N900](https://harald.ist.org/howto/n900/repair_bricked_phone.html)
 9. [Overclocking](https://wiki.maemo.org/Overclocking)
 10. [Archive.org files](https://archive.org/details/nokia_N900)
+11. [Phone control](https://wiki.maemo.org/Phone_control)
+12. [SMSCON](https://wiki.maemo.org/SMSCON)
 
 ### NITDroid
 
 1. [Nokia N900 NITDroid multiboot with Android 2.3 Gingerbread (depricated, just for general information)](https://github.com/mattiacantalu/Nokia_N900_NITDroid)
 2. [NITDroid on dedicated disk part](https://talk.maemo.org/showthread.php?t=101345)
 3. [Install manual's maxed-nokia-n900](http://maxed-nokia-n900.blogspot.com/)
-4. [Archive.org files](https://archive.org/details/NokiaN900NITdroid)
-5. [Triple-boot - Maemo 5 + Maemo 7 Leste + Android 2.3.4](https://talk.maemo.org/showthread.php?t=101338)
+4. [Triple-boot - Maemo 5 + Maemo 7 Leste + Android 2.3.4](https://talk.maemo.org/showthread.php?t=101338)
 
 ### Debian
 1. [Debian on Nokia N900](https://wiki.debian.org/DebianOnN900)
@@ -99,11 +104,11 @@ Various links, notes and files for Nokia N900.
 2. [Reviving an old N900 without lock code](https://blog.tldnr.org/2015/01/10/reviving-an-old-n900-without-lock-code/)
 - https://talk.maemo.org/showthread.php?t=100920
 - https://github.com/mattiacantalu/Nokia-N900-RX-51-20.2010
-- http://maemo.org/downloads/product/Maemo5/backupmenu/
-- https://www.lemmymorgan.com/how-to-manually-flash-nokia-n900-with-usb-cable/
-- https://kicherer.org/joomla/index.php/en/blog/32-recovering-a-non-booting-nokia-n900-with-maemo-from-a-sd-card
+- [Maemo: Backup Menu](http://maemo.org/downloads/product/Maemo5/backupmenu/)
+- [How to manually flash Nokia N900 with USB cable](https://www.lemmymorgan.com/how-to-manually-flash-nokia-n900-with-usb-cable/)
+- [Recovering a non-booting Nokia N900 with Maemo from a SD card](https://kicherer.org/joomla/index.php/en/blog/32-recovering-a-non-booting-nokia-n900-with-maemo-from-a-sd-card)
 
-- https://wiki.maemo.org/Updating_the_firmware
+- [Maemo: Updating the firmware](https://wiki.maemo.org/Updating_the_firmware)
 - [Maemo Flasher 3.5 - Download](https://maemo.viniciuspaes.com/flasher/)
 
 ### Tools
@@ -121,10 +126,16 @@ Maemo Flasher 3.5:
 
 ## HW
 
+- [CPU](https://wiki.maemo.org/N900_CPU)
+- [USB networking](https://wiki.maemo.org/N900_USB_networking)
+
 ### Neo900
 
 1. [maemo.cloud-7.de](http://maemo.cloud-7.de/)
 2. [maemo.cloud-7.de/Neo900](http://maemo.cloud-7.de/Neo900/)
+
+### Game pad
+- [Hackaday: Nokia N900 Control Pad](https://hackaday.com/2011/12/12/nokia-n900-control-pad-is-perfect-for-gaming-on-the-go/)
 
 ### Serial port
 - [elektranox.org/serial-adapter](https://n900.elektranox.org/serial-adapter.html)

@@ -13,6 +13,7 @@
     - [Installation from `.deb` files](#installation-from-deb-files)
   - [SW](#sw)
     - [Status Lights](#status-lights)
+    - [Shortcuts](#shortcuts)
     - [How to get more symbols on Nokia N900?](#how-to-get-more-symbols-on-nokia-n900)
     - [How to go to Nokia N900 task Manager?](#how-to-go-to-nokia-n900-task-manager)
     - [How to create a screenshot on Nokia N900](#how-to-create-a-screenshot-on-nokia-n900)
@@ -126,13 +127,14 @@ List of recommended applications for the Nokia N900:
 - VNC Viewer
 - Personal IP address
 
-[Games](../doc/maemo_games.md)
+Notes for some applications:
+- [Games](../doc/maemo_games.md)
+- [SMB](../doc/maemo_smb.md)
+- [Git](../doc/maemo_git.md)
 
-![Git on Nokia](../assets/Maemo/Nokia%20N900%20git.png)
 
-[Git .deb file](./deb/git_1.6.2-1_armel.deb)
-- [Git for armv7](https://nikosapi.org/software/git/)
-- [Maemo wiki Git](https://talk.maemo.org/showthread.php?t=27352&highlight=git+index-pack)
+DropBox
+- [Maemo: DropBox](https://talk.maemo.org/showthread.php?t=58882)
 
 ### Installation from `.install` files 
 You can install applications on Maemo 5 using `.install` files, which configure repositories and trigger application installation from them. Internet access is required to use `.install` files, and you can open them with the Hildon Application Manager.
@@ -168,13 +170,20 @@ What do the Nokia N900 LED colors mean?
 ```
 - [z/n900-notes](https://github.com/z/n900-notes)
 
+### Shortcuts
+Pressing **CTRL + SHIFT + X** brings up the terminal.
+
+Pressing **CTRL + N** in the contact list brings up the new contact screen. This same method works to open a new window in the browser.
+
+Pressing **CTRL + Spacebar** changes input languages if you have more than one language defined.
+
 ### How to get more symbols on Nokia N900?
 
 Click **Ctrl + Fn key** (below ctrl key)
 
 ### How to go to Nokia N900 task Manager?
 
-Click Ctrl+Backspace to immediately to to the task manager
+Click **Ctrl + Backspace** to immediately to to the task manager
 
 ### How to create a screenshot on Nokia N900
 Click **Ctrl + Shift + P** at the same time and you will find the screenshot inside the images folder.
