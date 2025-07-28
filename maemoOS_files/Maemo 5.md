@@ -170,6 +170,7 @@ What do the Nokia N900 LED colors mean?
 9. Red (blink once): Webcam on
 ```
 - [z/n900-notes](https://github.com/z/n900-notes)
+- [What do Nokia N900 LED colors mean?](https://n900tips.blogspot.com/2010/04/what-do-nokia-n900-led-colors-mean.html)
 
 ### Shortcuts
 Pressing **CTRL + SHIFT + X** brings up the terminal.

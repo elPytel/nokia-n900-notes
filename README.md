@@ -16,6 +16,7 @@ Various links, notes and files for Nokia N900.
   - [FIX Nokia](#fix-nokia)
     - [Tools](#tools)
   - [HW](#hw)
+    - [USB host mode:](#usb-host-mode)
     - [Neo900](#neo900)
     - [Game pad](#game-pad)
     - [Game Gripper](#game-gripper)
@@ -50,8 +51,16 @@ Various links, notes and files for Nokia N900.
 6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
 9. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
 10. [Nokia N900 Versus Motorola Droid](https://gadgetoid.com/2009/12/21/nokia-n900-versus-motorola-droidmilestone/)
+
+- [YouTube: All About Maemo](https://www.youtube.com/@allaboutmaemo/videos)
 - [ter Smitten's web](https://blog.tersmitten.nl/tag/n900)
-- [What do Nokia N900 LED colors mean?](https://n900tips.blogspot.com/2010/04/what-do-nokia-n900-led-colors-mean.html)
+- [Tracy and Matt](https://www.tracyandmatt.co.uk):
+  - [How to add internet radio stations to the Nokia N9](https://www.tracyandmatt.co.uk/how-to-add-internet-radio-stations-to-the-nokia-n9/)
+  - [How to install MSN, Yahoo Messenger, AIM, ICQ, etc. on the Nokia N9](https://www.tracyandmatt.co.uk/how-to-install-msn-yahoo-messenger-aim-icq-etc-on/)
+- [MyNokiaBlog](http://mynokiablog.com/):
+  - [Apps, Apps and Some More Apps for Your Nokia N900 (Maemo 5)](http://mynokiablog.com/2010/05/13/apps-apps-and-some-more-apps-for-your-nokia-n900-maemo-5/)
+  - [Facebook Chat for N900's Inbuilt Conversations App](http://mynokiablog.com/2010/02/06/facebook-chat-for-n900s-inbuilt-conversations-app/)
+  - [Yappari A WhatsApp Client for the N900](http://mynokiablog.com/2012/06/04/yappari-a-whatsapp-client-for-the-n900/)
 
 ## OS
 
@@ -105,14 +114,13 @@ Various links, notes and files for Nokia N900.
 
 1. [RescueOS](https://github.com/quitesimpleorg/N900_RescueOS) [(description)](https://quitesimple.org/page/N900rescueOS)
 2. [Reviving an old N900 without lock code](https://blog.tldnr.org/2015/01/10/reviving-an-old-n900-without-lock-code/)
-- https://talk.maemo.org/showthread.php?t=100920
-- https://github.com/mattiacantalu/Nokia-N900-RX-51-20.2010
+- [What is your easiest way to reinstall N900?](https://talk.maemo.org/showthread.php?t=100920)
+- [Nokia N900 last firmware](https://github.com/mattiacantalu/Nokia-N900-RX-51-20.2010)
 - [Maemo: Backup Menu](http://maemo.org/downloads/product/Maemo5/backupmenu/)
 - [How to manually flash Nokia N900 with USB cable](https://www.lemmymorgan.com/how-to-manually-flash-nokia-n900-with-usb-cable/)
 - [Recovering a non-booting Nokia N900 with Maemo from a SD card](https://kicherer.org/joomla/index.php/en/blog/32-recovering-a-non-booting-nokia-n900-with-maemo-from-a-sd-card)
 
 - [Maemo: Updating the firmware](https://wiki.maemo.org/Updating_the_firmware)
-- [Maemo Flasher 3.5 - Download](https://maemo.viniciuspaes.com/flasher/)
 
 ### Tools
 Maemo Flasher 3.5:
@@ -127,10 +135,21 @@ Maemo Flasher 3.5:
 | [LICENSE](./tools/flasher-3.5/LICENSE) | - | 14 KB |
 | [Readme_Maemo_Flasher-3.5.txt](./tools/flasher-3.5/Readme_Maemo_Flasher-3.5.txt) | - | 7 KB |
 
+- [Maemo Flasher 3.5 - Download](https://maemo.viniciuspaes.com/flasher/)
+
 ## HW
 
 - [CPU](https://wiki.maemo.org/N900_CPU)
+
+Bleuooth:
+- [Typing with Bluetooth Keyboard](http://mynokiablog.com/2010/03/05/video-typing-with-bluetooth-keyboard-nokia-su-w8-on-the-nokia-n900-finally-replace-your-netbook/)
+
+### USB host mode:
 - [USB networking](https://wiki.maemo.org/N900_USB_networking)
+- [YouTube: Nokia N900 + Ethernet (via USB-RJ45 adapter)](https://www.youtube.com/watch?v=3IyeSNGCWTA)
+- [YouTube: Nokia N900 + USB Flash Drive: copy 1.46 GB movie](https://www.youtube.com/watch?v=6ED92orZLMM)
+- [YouTube: Nokia N900 + USB Card Reader](https://www.youtube.com/watch?v=0YPk4Y0ZPQY)
+- [YouTube: Nokia N900 + 500GB USB HDD (via active USB hub) - hostmode](https://www.youtube.com/watch?v=1Qfx_jaQ9jo)
 
 ### Neo900
 
