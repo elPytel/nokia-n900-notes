@@ -8,8 +8,9 @@ Various links, notes and files for Nokia N900.
     - [Other notes](#other-notes)
   - [OS](#os)
     - [Postmarket OS (pmOS)](#postmarket-os-pmos)
-    - [Maemo Leste](#maemo-leste)
-    - [Maemo Fremantle](#maemo-fremantle)
+    - [Maemo's](#maemos)
+      - [Maemo Fremantle](#maemo-fremantle)
+      - [Maemo Leste](#maemo-leste)
     - [NITDroid](#nitdroid)
     - [Debian](#debian)
     - [Other OS](#other-os)
@@ -17,6 +18,7 @@ Various links, notes and files for Nokia N900.
     - [Tools](#tools)
   - [HW](#hw)
     - [USB host mode:](#usb-host-mode)
+    - [More USB](#more-usb)
     - [Neo900](#neo900)
     - [Game pad](#game-pad)
     - [Game Gripper](#game-gripper)
@@ -31,6 +33,7 @@ Various links, notes and files for Nokia N900.
 2. [SMB on Maemo](./doc/maemo_smb.md)
 3. [(un)successful Git on Maemo](./doc/maemo_git.md)
 4. [(un)successful compilation of Python 3.11](https://github.com/elPytel/Python_3.11_on_N900)
+5. [(TO-DO) How to import and export contacts on Maemo](./doc/meamo_contacts.md)
 
 ### My notes for postmarketOS
 
@@ -48,10 +51,17 @@ Various links, notes and files for Nokia N900.
 3. [NikkSaan's n900-battery-monitor script](https://gist.github.com/NikkSaan/800c17d87dddfaa9edf5274130717d73)
 4. [Ollieparanoid's Dogfooding:N900](https://wiki.postmarketos.org/wiki/User:Ollieparanoid/Dogfooding:N900)
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
-6. [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
-9. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
-10. [Nokia N900 Versus Motorola Droid](https://gadgetoid.com/2009/12/21/nokia-n900-versus-motorola-droidmilestone/)
+6. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
+7.  [Nokia N900 Versus Motorola Droid](https://gadgetoid.com/2009/12/21/nokia-n900-versus-motorola-droidmilestone/)
+8.  [pittnerovi.com](https://www.pittnerovi.com/jiri/hobby/electronics/n900/)
 
+## OS
+
+### Postmarket OS (pmOS)
+
+[Postmarket OS](./pmOS_files/Postmarket%20OS.md)
+
+### Maemo's
 - [YouTube: All About Maemo](https://www.youtube.com/@allaboutmaemo/videos)
 - [ter Smitten's web](https://blog.tersmitten.nl/tag/n900)
 - [Tracy and Matt](https://www.tracyandmatt.co.uk):
@@ -61,18 +71,11 @@ Various links, notes and files for Nokia N900.
   - [Apps, Apps and Some More Apps for Your Nokia N900 (Maemo 5)](http://mynokiablog.com/2010/05/13/apps-apps-and-some-more-apps-for-your-nokia-n900-maemo-5/)
   - [Facebook Chat for N900's Inbuilt Conversations App](http://mynokiablog.com/2010/02/06/facebook-chat-for-n900s-inbuilt-conversations-app/)
   - [Yappari A WhatsApp Client for the N900](http://mynokiablog.com/2012/06/04/yappari-a-whatsapp-client-for-the-n900/)
+- [Techie Corner](https://www.techiecorner.com/)
+  - [How to enchance and increase battery life for N900](https://www.techiecorner.com/1633/how-to-enchance-and-increase-battery-life-for-n900/)
+  - [How to import contacts from SIM card to Nokia N900](https://www.techiecorner.com/1591/how-to-import-contacts-from-sim-card-to-nokia-n900/)
 
-## OS
-
-### Postmarket OS (pmOS)
-
-[Postmarket OS](./pmOS_files/Postmarket%20OS.md)
-
-
-### Maemo Leste
-[Leste](./maemo_leste_files/Leste.md)
-
-### Maemo Fremantle
+#### Maemo Fremantle
 
 [Maemo 5](./maemoOS_files/Maemo%205.md)
 
@@ -89,6 +92,9 @@ Various links, notes and files for Nokia N900.
 11. [Phone control](https://wiki.maemo.org/Phone_control)
 12. [SMSCON](https://wiki.maemo.org/SMSCON)
 
+#### Maemo Leste
+[Leste](./maemo_leste_files/Leste.md)
+
 ### NITDroid
 
 1. [Nokia N900 NITDroid multiboot with Android 2.3 Gingerbread (depricated, just for general information)](https://github.com/mattiacantalu/Nokia_N900_NITDroid)
@@ -102,7 +108,6 @@ Various links, notes and files for Nokia N900.
 3. [Debian900](https://github.com/dderby/debian900)
 4. [Easy Debian](https://wiki.maemo.org/Easy_Debian)
 5. [Qole's Debian](https://qole.org/files/debian900/)
-
 
 ### Other OS
 
@@ -150,6 +155,11 @@ Bleuooth:
 - [YouTube: Nokia N900 + USB Flash Drive: copy 1.46 GB movie](https://www.youtube.com/watch?v=6ED92orZLMM)
 - [YouTube: Nokia N900 + USB Card Reader](https://www.youtube.com/watch?v=0YPk4Y0ZPQY)
 - [YouTube: Nokia N900 + 500GB USB HDD (via active USB hub) - hostmode](https://www.youtube.com/watch?v=1Qfx_jaQ9jo)
+
+### More USB
+- [Full size USB mod on N900](https://simpledevices.blogspot.com/2015/04/a-few-modifications-of-nokia-n900.html)
+
+![USB-A](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgaWrnv-bFPlQzNS3GGmROLqDBZI91KDtZ14Zxlx9mNkMAU3pioWr5hXVOUJElV9Vp-wMW5OpQi0xS3HT4CZQWZYStYVvI9B2zWCwVxPOJkB9H3jxsClUr1d25JeLOTQlmB3cAGHj8P6w/s1600/19082014062.jpg)
 
 ### Neo900
 
