@@ -28,6 +28,8 @@ Various links, notes and files for Nokia N900.
 
 ## Nokia N900 Notes
 
+![Nokia N900](./assets/816uU9eISqL._AC_SL1500_.jpg)
+
 ### My notes for Maemo 
 1. [SSH to Maemo](./doc/Nokia%20N900%20-%20SSH.md)
 2. [SMB on Maemo](./doc/maemo_smb.md)
@@ -54,6 +56,7 @@ Various links, notes and files for Nokia N900.
 6. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
 7.  [Nokia N900 Versus Motorola Droid](https://gadgetoid.com/2009/12/21/nokia-n900-versus-motorola-droidmilestone/)
 8.  [pittnerovi.com](https://www.pittnerovi.com/jiri/hobby/electronics/n900/)
+9.  [Nokia N900 User Manual](https://manuals.plus/asin/B002OB49SW)
 
 ## OS
 
@@ -144,9 +147,28 @@ Maemo Flasher 3.5:
 
 ## HW
 
-- [CPU](https://wiki.maemo.org/N900_CPU)
+| Feature |	Detail |
+| --- | --- |
+| Brand |	Nokia |
+| Model Name |	N900 |
+| Operating System |	Maemo 5 |
+| [CPU](https://wiki.maemo.org/N900_CPU) Speed |	600 MHz ARM Cortex-A8 |
+| Display Size |	3.5 Inches |
+| Resolution |	800 x 480 pixels |
+| Internal Storage |	32 GB (expandable up to 48 GB via microSD) |
+| Application Memory |	Up to 1 GB (256 MB RAM + 768 MB virtual memory) |
+| Camera |	5-megapixel with Carl Zeiss optics, autofocus, dual LED flash |
+| Video Recording |	WVGA 16:9 at 30 fps |
+| Wireless Technologies |	Wi-Fi (802.11b/g), Bluetooth 2.1 + EDR, HSPA (900/1700/2100 MHz) |
+| Cellular Technology |	3G (WCDMA 900/1700/2100), Quad-band EGSM (850/900/1800/1900) |
+| GPS |	Integrated A-GPS sensor |
+| Audio Jack |	3.5 mm |
+| Dimensions |	4.37 x 2.35 x 0.77 inches (111 x 59.7 x 18.2 mm) |
+| Weight |	6.38 ounces (181 g) with battery |
+| Phone Talk Time |	Up to 6.3 hours |
+| Phone Standby Time |	Up to 278 hours (with data) |
 
-Bleuooth:
+Bluetooth:
 - [Typing with Bluetooth Keyboard](http://mynokiablog.com/2010/03/05/video-typing-with-bluetooth-keyboard-nokia-su-w8-on-the-nokia-n900-finally-replace-your-netbook/)
 
 ### USB host mode:

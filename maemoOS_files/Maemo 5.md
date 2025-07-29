@@ -12,6 +12,7 @@
     - [Installation from `.install` files](#installation-from-install-files)
     - [Installation from `.deb` files](#installation-from-deb-files)
   - [SW](#sw)
+    - [Media Player](#media-player)
     - [Status Lights](#status-lights)
     - [Shortcuts](#shortcuts)
     - [How to get more symbols on Nokia N900?](#how-to-get-more-symbols-on-nokia-n900)
@@ -154,6 +155,9 @@ dpkg -i <name>.deb
 ## SW
 
 - [n900 tips](https://n900tips.blogspot.com/)
+
+### Media Player
+The N900 supports digital audio and video playback with multi-format compatibilities (.mp3, .wma, .aac, .m4a, .wav for audio; .mp4, .avi, .wmv, .3gp for video).
 
 ### Status Lights
 What do the Nokia N900 LED colors mean?
