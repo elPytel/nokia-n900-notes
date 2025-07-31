@@ -54,9 +54,11 @@ Various links, notes and files for Nokia N900.
 4. [Ollieparanoid's Dogfooding:N900](https://wiki.postmarketos.org/wiki/User:Ollieparanoid/Dogfooding:N900)
 5. [saku-bruh's Custom i3wm Config](https://github.com/saku-bruh/i3-n900)
 6. [Maemo Leste via proot for ARM64 Android](https://github.com/diejuse/proot_MaemoLeste_on_Android)
-7.  [Nokia N900 Versus Motorola Droid](https://gadgetoid.com/2009/12/21/nokia-n900-versus-motorola-droidmilestone/)
-8.  [pittnerovi.com](https://www.pittnerovi.com/jiri/hobby/electronics/n900/)
-9.  [Nokia N900 User Manual](https://manuals.plus/asin/B002OB49SW)
+7. [Maemo Leste on PinePhone](https://forum.pine64.org/showthread.php?tid=18239)
+   - [Maemo Leste might be right for your PinePhone](https://medium.com/@camden.o.b/maemo-leste-might-be-right-for-your-pinephone-f0345485e8b1)
+8.  [Nokia N900 Versus Motorola Droid](https://gadgetoid.com/2009/12/21/nokia-n900-versus-motorola-droidmilestone/)
+9.  [pittnerovi.com](https://www.pittnerovi.com/jiri/hobby/electronics/n900/)
+10. [Nokia N900 User Manual](https://manuals.plus/asin/B002OB49SW)
 
 ## OS
 
@@ -97,6 +99,11 @@ Various links, notes and files for Nokia N900.
 
 #### Maemo Leste
 [Leste](./maemo_leste_files/Leste.md)
+
+- [Maemo Leste Development](https://leste.maemo.org/Development)
+- [Maemo Leste Virtual Machine](https://leste.maemo.org/Virtual_Machine)
+- [Maemo Leste Sixteenth Update](https://maemo-leste.github.io/maemo-leste-sixteenth-update-november-and-december-2021-january-april-2022.html)
+- [Maemo Leste on the Droid4](https://linmob.net/maemoleste-on-the-droid4/)
 
 ### NITDroid
 
