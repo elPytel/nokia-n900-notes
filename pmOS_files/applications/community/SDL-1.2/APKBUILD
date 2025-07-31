@@ -1,0 +1,35 @@
+# NOT WORKING
+# Contributor: Sam Lantinga <slouken@libsdl.org>
+# Maintainer: elPytel <jaroslav.korner1@gmail.com>
+pkgname=sdl-1.2
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="Simple DirectMedia Layer 1.2, a cross-platform multimedia library"
+url="https://github.com/libsdl-org/SDL-1.2"
+arch="armv7"
+license="LGPL-2.1 license"
+depends=""
+makedepends="git make gcc"
+source=""
+builddir="$srcdir/$pkgname"
+
+prepare() {
+    source="https://github.com/libsdl-org/SDL-1.2.git"
+    if [ ! -d "$builddir" ]; then
+        git clone "$source" "$builddir"
+    fi
+    cd "$builddir"
+}
+
+build() {
+    ./configure
+    make
+}
+
+check() {
+    :
+}
+
+package() {
+    make install
+}

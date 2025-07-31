@@ -11,6 +11,7 @@
 | **Midori**      | ✅                 | ✔ fast              | Multimedia and light browsing    |
 | **Firefox‑esr** | ✅                 | X slow            | Web apps, JS-heavy content       |
 
+[Web Browsers for PMOS](https://wiki.postmarketos.org/wiki/Category:Web_browsers)
 
 ## Firefox ESR
 Installation:

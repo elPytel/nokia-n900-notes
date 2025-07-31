@@ -1,0 +1,36 @@
+# NOT WORKING
+# Contributor: proff_fs
+# Contributor: cph
+# Maintainer: elPytel <jaroslav.korner1@gmail.com>
+pkgname=prboom
+pkgver=2.5.0
+pkgrel=0
+pkgdesc="PrBoom is a Doom source port based on the original Doom source code"
+url="https://prboom.sourceforge.net/linux.html"
+arch="armv7"
+license="MIT"
+depends=""
+makedepends="git make clang wget tar"
+source=""
+builddir="$srcdir/$pkgname"
+
+prepare() {
+    # https://sourceforge.net/projects/prboom/files/prboom%20stable/2.5.0/prboom-2.5.0.tar.gz/download
+    if [ ! -d "$builddir" ]; then
+        mkdir -p "$builddir"
+        wget -O - "https://sourceforge.net/projects/prboom/files/prboom%20stable/$pkgver/prboom-$pkgver.tar.gz/download" | tar -xz --strip-components=1 -C "$builddir"
+    fi
+    cd "$builddir"
+}
+
+build() {
+    make
+}
+
+check() {
+    :
+}
+
+package() {
+    install -Dm755 bf "$pkgdir/usr/bin/bf-interpreter"
+}

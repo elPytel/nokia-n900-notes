@@ -169,6 +169,8 @@ Basic keys: (complete list in the man page, also check input.conf)
 pure-maps - maps application
 https://wiki.postmarketos.org/wiki/Pure_Maps
 
+[Spotifyd](https://github.com/Spotifyd/spotifyd)
+
 #### Brain-fuck interpreter
 ![brain-fuck](../assets/pmos_bf-interpreter.png)
 
@@ -185,6 +187,11 @@ https://wiki.postmarketos.org/wiki/Pure_Maps
 ## i3wm
 
 To modify the i3 window manager configuration, you'll primarily be working with the `~/.config/i3/config` file (or `~/.i3/config`).
+
+[User Guide](https://i3wm.org/docs/userguide.html)
+[Switch to i3](https://rz0r.net/post/2021-06-19-switch-to-i3/)
+[Config file](https://github.com/saku-bruh/i3-n900/blob/i3wm-gaps/config/i3/config)
+[Device config](https://gitlab.postmarketos.org/postmarketOS/pmaports/-/blob/master/device/community/device-nokia-n900/i3wm/i3wm.conf)
 
 ### Shortcuts
 ##### default mode

@@ -261,5 +261,5 @@ My final configuration for `oop5` (I repeat, it may not work for you):
 - [A superficial description of the `opp-table` syntax](https://www.kernel.org/doc/Documentation/devicetree/bindings/opp/opp.txt);
 
 - [Maemo Overclocking wiki page](https://wiki.maemo.org/Overclocking);
-
+- [Undervolting and voltage tables](https://wiki.maemo.org/Overclocking#Undervolting_and_voltage_tables)
 - [A helpful note about maximum voltage](https://talk.maemo.org/showpost.php?p=606031&postcount=2375);

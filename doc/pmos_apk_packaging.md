@@ -245,3 +245,6 @@ It uses the `git` command to clone the repository and build the package automati
 - [alpine packaging setup](https://blog.orhun.dev/alpine-packaging-setup/)
 - [Creating Alpine Linux Packages](https://gist.github.com/XtendedGreg/ebd54547a28178b443aa521fed571397)
 - [archlinux abould man page](https://man.archlinux.org/man/extra/abuild/abuild.1.en)
+
+- https://github.com/alpinelinux/alpine-chroot-install
+- https://github.com/orhun/alpkg
