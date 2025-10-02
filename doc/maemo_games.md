@@ -15,6 +15,8 @@
 
 ![](../assets/Screenshots/Screenshot-20250717-221611.png)
 ![](../assets/Screenshots/Screenshot-20250717-221635.png)
+![](../assets/Screenshots/Screenshot-20250721-163048.png)
+![](../assets/Screenshots/Screenshot-20250721-163210.png)
 
 ## Resources
 - [Games](https://wiki.maemo.org/Games)
